@@ -1,7 +1,6 @@
 # Draf thread peluncuran (X / Threads)
 
 > Semua angka di bawah diambil dari `data/eksperimen.json` per 25 Okt 2026. Cek ulang angka sebelum posting.
-> Ganti `https://vanovri.github.io/radar-loker/` dengan URL GitHub Pages.
 
 ---
 
