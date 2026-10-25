@@ -1,0 +1,12 @@
+{
+  "name": "radar-loker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Detektor red flag lowongan kerja Indonesia + dashboard eksperimen 30 hari lamar kerja dibantu AI",
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\"",
+    "data": "python scripts/build_data.py",
+    "dev": "python -m http.server 5173"
+  }
+}

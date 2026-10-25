@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Radar Loker — Cek red flag lowongan kerja dalam 3 detik</title>
+  <meta name="description" content="Tempel teks lowongan, dapatkan skor red flag: biaya pendaftaran, penahanan ijazah, gaji di bawah UMP, kerja tugas online. Gratis, tanpa login, teks tidak dikirim ke server.">
+  <meta property="og:title" content="Radar Loker — Cek red flag lowongan kerja">
+  <meta property="og:description" content="Biaya pendaftaran? Tahan ijazah? Gaji di bawah UMP? Cek dulu sebelum melamar.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav>
+      <a href="./" aria-current="page">Detektor</a>
+      <a href="eksperimen.html">Eksperimen 30 Hari</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Lowongan ini aman, atau jebakan?</h1>
+      <p>Tempel teks lowongan. Radar Loker memeriksa <span id="jumlah-pola">18</span> pola red flag — dari biaya pendaftaran sampai penahanan ijazah — dan menjelaskan kenapa itu berbahaya.</p>
+    </div>
+
+    <form id="cek" class="card" novalidate>
+      <div class="field">
+        <label for="teks">Teks lowongan</label>
+        <span id="teks-hint" class="hint">Salin dari Instagram, WhatsApp, JobStreet, atau poster (ketik ulang bagian penting). Teks diproses di browser Anda dan tidak dikirim ke mana pun.</span>
+        <textarea id="teks" name="teks" aria-describedby="teks-hint" required spellcheck="false"
+          placeholder="Contoh: DIBUTUHKAN SEGERA admin gudang, gaji 8 juta, tanpa pengalaman…"></textarea>
+      </div>
+      <div class="row">
+        <button type="submit" class="primary">Cek red flag</button>
+        <button type="button" class="ghost" data-sample="scam">Coba contoh penipuan</button>
+        <button type="button" class="ghost" data-sample="normal">Coba contoh normal</button>
+      </div>
+    </form>
+
+    <section id="hasil" class="result card" hidden aria-live="polite" aria-labelledby="hasil-judul">
+      <h2 id="hasil-judul" class="note" style="margin:0 0 .75rem;font-size:.95rem;font-weight:600">Hasil pemeriksaan</h2>
+      <div class="score" id="skor">
+        <div class="score-num"><span id="angka">0</span><small>/100</small></div>
+        <div>
+          <p class="score-label" id="level">—</p>
+          <div class="meter" role="img" id="meter-label"><i id="meter"></i></div>
+          <p class="note" id="ringkas" style="margin:.5rem 0 0"></p>
+        </div>
+      </div>
+      <ul class="findings" id="temuan"></ul>
+      <div class="row">
+        <button type="button" id="bagikan" class="primary">Bagikan hasil</button>
+        <button type="button" id="salin">Salin teks</button>
+        <span id="status" class="note" role="status"></span>
+      </div>
+    </section>
+
+    <p class="note">Radar Loker memakai aturan heuristik, bukan AI dan bukan nasihat hukum. Skor rendah tidak menjamin lowongan asli — selalu cek nama perusahaan di situs resmi dan <a href="https://ahu.go.id" rel="noopener">AHU Kemenkumham</a>. Temukan penipuan? Laporkan ke <a href="https://aduankonten.id" rel="noopener">aduankonten.id</a> dan Disnaker setempat.</p>
+  </main>
+
+  <footer class="site wrap">
+    Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a> sambil mencari kerja. Bagian dari eksperimen <a href="eksperimen.html">30 hari lamar kerja dibantu AI</a>.
+  </footer>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

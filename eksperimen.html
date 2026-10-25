@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>30 Hari AI Ngelamarin Kerja Buat Gw — Radar Loker</title>
+  <meta name="description" content="Eksperimen terbuka: fresh graduate Teknik Elektro membiarkan agent AI membantu melamar kerja selama 30 hari. Semua angka asli, diperbarui berkala.">
+  <meta property="og:title" content="30 Hari AI Ngelamarin Kerja Buat Gw">
+  <meta property="og:description" content="Berapa lamaran sampai dapat interview? Data asli, diperbarui berkala.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav>
+      <a href="./">Detektor</a>
+      <a href="eksperimen.html" aria-current="page">Eksperimen 30 Hari</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>30 hari AI ngelamarin kerja buat gw.</h1>
+      <p>Fresh graduate S1 Teknik Elektro. Agent AI mencari lowongan, menyesuaikan CV, dan mengisi formulir; gw yang menyetujui. Berapa lamaran sampai dapat interview? Semua angka di bawah asli.</p>
+      <div class="progress">
+        <p class="note" style="margin:0" id="hari">Memuat…</p>
+        <div class="meter" role="img" id="hari-meter-label"><i id="hari-meter"></i></div>
+      </div>
+    </div>
+
+    <div class="stats" id="stats" aria-live="polite"></div>
+
+    <section class="block">
+      <h2>Status terakhir tiap lamaran</h2>
+      <dl class="bars" id="funnel"></dl>
+    </section>
+
+    <section class="block">
+      <h2>Lewat portal mana</h2>
+      <dl class="bars" id="portals"></dl>
+    </section>
+
+    <section class="block">
+      <h2>Jenis posisi</h2>
+      <dl class="bars" id="families"></dl>
+    </section>
+
+    <section class="block">
+      <h2>Catatan harian</h2>
+      <ol class="log" id="log"></ol>
+    </section>
+
+    <p class="note" id="sumber"></p>
+  </main>
+
+  <footer class="site wrap">
+    Nama perusahaan sengaja tidak ditampilkan. Data diambil dari riwayat lamaran di portal masing-masing dan bukti email konfirmasi.
+    <a href="./">Cek red flag lowongan →</a>
+  </footer>
+
+  <script type="module">
+    const $ = (id) => document.getElementById(id);
+    const fmtDate = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+    const fmtTime = new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium', timeStyle: 'short' });
+
+    function el(tag, props = {}, ...children) {
+      const n = document.createElement(tag);
+      Object.assign(n, props);
+      for (const c of children) if (c != null) n.append(c);
+      return n;
+    }
+
+    function bars(target, items, label = 'name') {
+      const max = Math.max(1, ...items.map((i) => i.count));
+      $(target).replaceChildren(
+        ...items.map((i) => {
+          const fill = el('i');
+          fill.style.setProperty('--w', `${(i.count / max) * 100}%`);
+          return el('div', { className: 'bar' },
+            el('dt', { textContent: i[label] }),
+            el('dd', {}, fill),
+            el('output', { textContent: String(i.count) }));
+        }),
+      );
+    }
+
+    // Tanggal YYYY-MM-DD diparse sebagai tanggal lokal (bukan UTC) agar tidak bergeser sehari.
+    const localDate = (s) => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
+
+    try {
+      const [d, log] = await Promise.all([
+        fetch('data/eksperimen.json').then((r) => r.json()),
+        fetch('data/log.json').then((r) => r.json()).catch(() => []),
+      ]);
+
+      const start = localDate(d.start);
+      const today = new Date();
+      const day = Math.min(d.days, Math.max(1, Math.floor((today - start) / 864e5) + 1));
+      $('hari').textContent = `Hari ke-${day} dari ${d.days} · mulai ${fmtDate.format(start)}`;
+      $('hari-meter').style.setProperty('--w', `${(day / d.days) * 100}%`);
+      $('hari-meter-label').setAttribute('aria-label', `Hari ke-${day} dari ${d.days}`);
+
+      const interview = d.funnel.find((f) => f.stage === 'Interview')?.count ?? 0;
+      const stats = [
+        [d.total, 'lamaran terkirim'],
+        [d.companies, 'perusahaan'],
+        [`${new Intl.NumberFormat('id-ID').format(d.response_rate)}%`, 'direspons (dilihat/diproses)'],
+        [interview, 'interview', interview === 0],
+      ];
+      $('stats').replaceChildren(
+        ...stats.map(([v, l, zero]) => el('div', { className: `card stat${zero ? ' zero' : ''}` },
+          el('b', { textContent: String(v) }), el('span', { textContent: l }))),
+      );
+
+      bars('funnel', d.funnel, 'stage');
+      bars('portals', d.portals);
+      bars('families', d.families);
+
+      $('log').replaceChildren(
+        ...[...log].reverse().map((e) => el('li', {},
+          el('time', { dateTime: e.date, textContent: fmtDate.format(localDate(e.date)) }),
+          el('b', { textContent: e.title }),
+          el('span', { textContent: e.note }))),
+      );
+
+      $('sumber').textContent = `Diperbarui ${fmtTime.format(new Date(d.generated_at))}. ${d.source_rows} baris bukti, ${d.total} lamaran unik setelah deduplikasi.`;
+    } catch (err) {
+      $('hari').textContent = 'Data gagal dimuat. Buka lewat server lokal (npm run dev), bukan file://.';
+      console.error(err);
+    }
+  </script>
+</body>
+</html>

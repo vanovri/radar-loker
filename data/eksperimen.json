@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-10-25T11:07:42",
+  "source_rows": 70,
+  "start": "2026-10-23",
+  "days": 30,
+  "day": 3,
+  "total": 70,
+  "companies": 54,
+  "responded": 3,
+  "response_rate": 4.3,
+  "funnel": [
+    {
+      "stage": "Menunggu respons",
+      "count": 67
+    },
+    {
+      "stage": "Dilihat HR",
+      "count": 1
+    },
+    {
+      "stage": "Diproses",
+      "count": 2
+    },
+    {
+      "stage": "Interview",
+      "count": 0
+    },
+    {
+      "stage": "Offer",
+      "count": 0
+    },
+    {
+      "stage": "Ditolak",
+      "count": 0
+    }
+  ],
+  "portals": [
+    {
+      "name": "JobStreet",
+      "count": 32
+    },
+    {
+      "name": "KarirJakarta",
+      "count": 28
+    },
+    {
+      "name": "Portal karier perusahaan",
+      "count": 9
+    },
+    {
+      "name": "Glints",
+      "count": 1
+    }
+  ],
+  "families": [
+    {
+      "name": "Teknisi/Elektro",
+      "count": 26
+    },
+    {
+      "name": "Software/IT",
+      "count": 22
+    },
+    {
+      "name": "Sales/Bisnis",
+      "count": 6
+    },
+    {
+      "name": "Trainee/MT",
+      "count": 6
+    },
+    {
+      "name": "Admin/Operasional",
+      "count": 6
+    },
+    {
+      "name": "Lainnya",
+      "count": 4
+    }
+  ]
+}
