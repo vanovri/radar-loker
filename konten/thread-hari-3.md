@@ -48,13 +48,13 @@ Tempel teks lowongan, keluar skor red flag 0–100 lengkap sama alasannya:
 **7/**
 Gratis, tanpa login, dan teksnya nggak dikirim ke server mana pun (semua jalan di browser lo).
 
-https://vanovri.github.io/radar-loker/
+https://radar-loker.vercel.app/
 
 [screenshot: contoh lowongan penipuan → skor 100/100]
 
 **8/**
 Dashboard eksperimennya juga live, gw update berkala:
-https://vanovri.github.io/radar-loker/eksperimen.html
+https://radar-loker.vercel.app/eksperimen.html
 
 Kalau lo HR atau rekruter: menurut lo kenapa 67 lamaran belum ada respons sama sekali? Gw beneran pengen tahu.
 
