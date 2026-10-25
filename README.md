@@ -1,5 +1,7 @@
 # Radar Loker
 
+**Live:** https://vanovri.github.io/radar-loker/ · [Dashboard eksperimen](https://vanovri.github.io/radar-loker/eksperimen.html)
+
 Dua hal dalam satu situs statis:
 
 1. **Detektor red flag lowongan** (`index.html`). Tempel teks lowongan, keluar skor 0–100 + penjelasan tiap red flag: biaya pendaftaran, penahanan ijazah, kerja tugas online, minta OTP, gaji di bawah UMP, gaji tidak wajar untuk pemula, denda resign, jam kerja berlebih, dll. Berjalan 100% di browser — tanpa API, tanpa server, teks tidak dikirim ke mana pun.

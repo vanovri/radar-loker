@@ -1,7 +1,7 @@
 # Draf thread peluncuran (X / Threads)
 
 > Semua angka di bawah diambil dari `data/eksperimen.json` per 25 Okt 2026. Cek ulang angka sebelum posting.
-> Ganti `[LINK]` dengan URL GitHub Pages.
+> Ganti `https://vanovri.github.io/radar-loker/` dengan URL GitHub Pages.
 
 ---
 
@@ -49,13 +49,13 @@ Tempel teks lowongan, keluar skor red flag 0–100 lengkap sama alasannya:
 **7/**
 Gratis, tanpa login, dan teksnya nggak dikirim ke server mana pun (semua jalan di browser lo).
 
-[LINK]
+https://vanovri.github.io/radar-loker/
 
 [screenshot: contoh lowongan penipuan → skor 100/100]
 
 **8/**
 Dashboard eksperimennya juga live, gw update berkala:
-[LINK]/eksperimen.html
+https://vanovri.github.io/radar-loker/eksperimen.html
 
 Kalau lo HR atau rekruter: menurut lo kenapa 67 lamaran belum ada respons sama sekali? Gw beneran pengen tahu.
 
