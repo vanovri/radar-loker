@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Roast CV ala HRD (Jaksel, Pabrik, & Robot ATS) — Radar Loker</title>
+  <meta name="description" content="Tempel teks CV kamu, pilih karakter HRD (Jaksel, Pabrik Cikarang, atau Robot ATS), dapatkan skor ATS, roasting jujur, dan kalimat perbaikan otomatis.">
+  <meta property="og:title" content="Roast CV ala HRD — Berani di-roasting sebelum kirim lamaran?">
+  <meta property="og:description" content="Cek skor metrik CV, deteksi klise kosong, dan ubah kalimat pasif jadi berorientasi hasil.">
+  <meta property="og:url" content="https://vanovri.github.io/radar-loker/roast-cv.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://vanovri.github.io/radar-loker/roast-cv.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Roast CV lo sebelum dibuang HRD.</h1>
+      <p>Tempel isi CV. Sistem memeriksa kepadatan angka/metrik, kata kerja aktif vs pasif, klise kosong, dan kebocoran data pribadi — lalu meng-roasting sesuai karakter HRD pilihan lo.</p>
+    </div>
+
+    <form id="form-roast" class="card" novalidate>
+      <fieldset>
+        <legend>Pilih karakter penilai</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="persona" value="jaksel" checked> HRD Startup Jaksel</label>
+          <label><input type="radio" name="persona" value="pabrik"> HRD Pabrik Kawasan Industri</label>
+          <label><input type="radio" name="persona" value="ats"> Mesin Robot ATS</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="cv-teks">Teks CV</label>
+        <span id="cv-hint" class="hint">Salin seluruh isi CV (Ctrl+A, Ctrl+C dari PDF/Word). Diproses 100% di browser, tidak diunggah ke server.</span>
+        <textarea id="cv-teks" name="cv" aria-describedby="cv-hint" required spellcheck="false"
+          placeholder="Tempel teks CV di sini…"></textarea>
+      </div>
+      <div class="row">
+        <button type="submit" class="primary">Roast CV Sekarang</button>
+        <button type="button" class="ghost" data-cv="klise">Contoh CV Klise</button>
+        <button type="button" class="ghost" data-cv="kuat">Contoh CV ATS Kuat</button>
+      </div>
+    </form>
+
+    <section id="hasil" class="result card" hidden aria-live="polite">
+      <div class="score" id="skor-box">
+        <div class="score-num"><span id="angka">0</span><small>/100</small></div>
+        <div>
+          <p class="score-label" id="label-skor">—</p>
+          <div class="meter" role="img" id="meter-label"><i id="meter"></i></div>
+          <p class="note" id="ringkas" style="margin:.5rem 0 0"></p>
+        </div>
+      </div>
+
+      <ul class="findings" id="roast-list"></ul>
+
+      <div style="margin-top:1.25rem">
+        <h3 style="font-size:1rem;margin:0 0 .5rem">Saran Perbaikan Kalimat (Formula Action + Metrik)</h3>
+        <ul class="findings" id="rewrite-list"></ul>
+      </div>
+
+      <div class="row">
+        <button type="button" id="salin" class="primary">Salin Hasil Roast</button>
+        <span id="status" class="note" role="status"></span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a>. <a href="https://github.com/vanovri/radar-loker" rel="noopener">Kode sumber</a>.
+  </footer>
+
+  <script type="module">
+    import { mountNav } from './src/nav.js';
+    import { auditCV } from './src/roast.js';
+    mountNav('roast');
+
+    const SAMPLES = {
+      klise: `Budi Santoso | 0812-3456-7890 | budi.santoso@gmail.com
+NIK: 3275011203010002 | Agama: Islam | Status Perkawinan: Belum Menikah
+Saya adalah lulusan baru yang pekerja keras, cepat belajar, jujur dan disiplin, serta mampu bekerja di bawah tekanan baik dalam tim maupun individu.
+
+Pengalaman:
+- Bertanggung jawab atas perawatan komputer dan jaringan di laboratorium kampus.
+- Membantu tim dalam kegiatan praktikum mahasiswa.
+- Terlibat dalam kepanitiaan acara seminar jurusan.
+- Melakukan pekerjaan administrasi harian.
+
+Harapan gaji mengikuti UMP setempat.`,
+      kuat: `ARDHYA NOVRI RAMADHAN
++62 812 9155 2970 | ardhyasan@gmail.com | linkedin.com/in/dhya | ardhyanovri.my.id
+Electrical Engineering graduate skilled in C, STM32, Python, IoT, React, FastAPI, Git.
+
+Work Experience:
+- Developed and deployed 100% of company production website as sole developer, integrating 3 core modules (showcase, carbon calculator, digital MRV).
+- Completed an 8-week technical rotation across 2 airport electrical divisions (5 weeks UPS/converter, 3 weeks protection relays) at Soekarno-Hatta Airport.
+- Engineered ESP32-based IoT prototypes for real-time telemetry and PWM motor control, benchmarking latency between 2 cloud platforms.
+- Guided undergraduate students across 2 consecutive semesters in basic electronics practicums and instrumentation troubleshooting.
+- Engineered a 4 kHz STM32F411CEU6 EMG acquisition system featuring 12-bit DMA ADC and 3 digital filters (20 Hz, 500 Hz, 50 Hz).`
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const form = $('form-roast');
+    const ta = $('cv-teks');
+    let last = null;
+
+    function render(r) {
+      last = r;
+      $('hasil').hidden = false;
+      const lvl = r.score >= 75 ? 'aman' : r.score >= 50 ? 'waspada' : 'bahaya';
+      $('skor-box').dataset.level = lvl;
+      $('angka').textContent = String(r.score);
+      $('label-skor').textContent = r.score >= 75 ? 'Siap Tempur (ATS-Friendly)' : r.score >= 50 ? 'Masih Generik — Perlu Diperkuat' : 'Rawan Di-skip HRD & ATS';
+      $('meter').style.setProperty('--w', `${r.score}%`);
+      $('ringkas').textContent = `${r.stats.words} kata · ${r.stats.metrics} metrik angka · ${r.stats.strongVerbs} kata kerja aktif · ${r.stats.cliches} klise`;
+
+      $('roast-list').replaceChildren(
+        ...r.roasts.map((txt, idx) => {
+          const li = document.createElement('li');
+          li.className = `finding sev-${idx === 0 && r.score < 60 ? 'bahaya' : 'waspada'}`;
+          const p = document.createElement('p');
+          p.textContent = txt;
+          li.append(p);
+          return li;
+        }),
+      );
+
+      $('rewrite-list').replaceChildren(
+        ...r.rewrites.map((rw) => {
+          const li = document.createElement('li');
+          li.className = 'finding sev-aman';
+          const q1 = document.createElement('q');
+          q1.textContent = `Sebelum: "${rw.before}"`;
+          const p2 = document.createElement('p');
+          p2.textContent = `Sesudah: "${rw.after}"`;
+          li.append(q1, p2);
+          return li;
+        }),
+      );
+    }
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!ta.value.trim()) { ta.focus(); return; }
+      const persona = form.elements.persona.value;
+      render(auditCV(ta.value, persona));
+    });
+
+    for (const b of document.querySelectorAll('[data-cv]')) {
+      b.addEventListener('click', () => {
+        ta.value = SAMPLES[b.dataset.cv];
+        form.requestSubmit();
+      });
+    }
+
+    $('salin').addEventListener('click', async () => {
+      if (!last) return;
+      const txt = `Skor CV gw di Roast CV Radar Loker: ${last.score}/100 (${last.stats.metrics} metrik, ${last.stats.cliches} klise).\n"${last.roasts[0]}"\nCek CV lo: ${location.href}`;
+      await navigator.clipboard.writeText(txt);
+      $('status').textContent = 'Tersalin ke clipboard.';
+    });
+  </script>
+</body>
+</html>

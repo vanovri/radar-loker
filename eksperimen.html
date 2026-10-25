@@ -64,6 +64,8 @@
   </footer>
 
   <script type="module">
+    import { mountNav } from './src/nav.js';
+    mountNav('eksperimen');
     const $ = (id) => document.getElementById(id);
     const fmtDate = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
     const fmtTime = new Intl.DateTimeFormat('id-ID', { dateStyle: 'medium', timeStyle: 'short' });

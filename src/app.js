@@ -1,4 +1,28 @@
 import { analyze, RULES } from './rules.js';
+import { mountNav, TOOLS } from './nav.js';
+
+mountNav('loker');
+
+// Render 7-Project Launchpad Grid
+const grid = document.getElementById('suite-grid');
+if (grid) {
+  grid.replaceChildren(
+    ...TOOLS.map((t) => {
+      const a = document.createElement('a');
+      a.className = 'suite-item';
+      a.href = t.href;
+      const badge = document.createElement('small');
+      badge.className = 'badge';
+      badge.textContent = `${t.num} · ${t.group}`;
+      const b = document.createElement('b');
+      b.textContent = t.title;
+      const s = document.createElement('span');
+      s.textContent = t.desc;
+      a.append(badge, b, s);
+      return a;
+    }),
+  );
+}
 
 // 4 aturan tambahan dihitung di analyze(): gaji tidak wajar, gaji rendah, gaji tidak ada, usia sempit
 document.getElementById('jumlah-pola').textContent = String(RULES.length + 4);

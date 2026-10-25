@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Pasal & Kontrak Kerja Diff Explainer — Terjemahkan Klausul Hukum ke Bahasa Manusia</title>
+  <meta name="description" content="Bandingkan pasal UU Ketenagakerjaan vs UU Cipta Kerja atau draf kontrak kerja PKWT wajar vs kontrak jebakan. Lihat kata yang diselipkan dan artinya buat pekerja.">
+  <meta property="og:title" content="Pasal & Kontrak Diff Explainer — Jangan Tanda Tangan Sebelum Cek Ini">
+  <meta property="og:description" content="Deteksi perubahan kata 'wajib' jadi 'dapat', penghapusan upah lembur, penahanan ijazah, dan denda resign.">
+  <meta property="og:url" content="https://vanovri.github.io/radar-loker/pasal.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://vanovri.github.io/radar-loker/pasal.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Satu kata berubah di pasal/kontrak, nasib lo bisa beda.</h1>
+      <p>Bandingkan pasal UU lama vs baru, atau kontrak kerja standar vs kontrak yang disodorkan ke lo. Sistem menandai kata yang dihapus/ditambah dan menerjemahkan dampaknya.</p>
+    </div>
+
+    <form id="form-pasal" class="card">
+      <div class="row" style="margin-top:0;margin-bottom:.85rem">
+        <button type="button" class="ghost" data-preset="kontrak_jebakan">Preset Kontrak PKWT Wajar vs Nakal</button>
+        <button type="button" class="ghost" data-preset="pkwt_uu">Preset UU 13/2003 vs UU Cipta Kerja (PKWT)</button>
+        <button type="button" class="ghost" data-preset="outsourcing">Preset Aturan Outsourcing</button>
+      </div>
+
+      <div class="grid-2">
+        <div class="field">
+          <label for="teks-lama" id="label-lama">Teks Acuan / Pasal Lama</label>
+          <textarea id="teks-lama" required></textarea>
+        </div>
+        <div class="field">
+          <label for="teks-baru" id="label-baru">Teks Pembanding / Draf Kontrak Baru</label>
+          <textarea id="teks-baru" required></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <button type="submit" class="primary">Bandingkan & Terjemahkan</button>
+      </div>
+    </form>
+
+    <section id="hasil" class="result card" aria-live="polite">
+      <h2 id="judul-diff" style="font-size:1.1rem;margin:0 0 .5rem"></h2>
+      <p class="note" id="stat-diff" style="margin:0 0 .75rem"></p>
+
+      <div class="diff-box" id="kotak-diff"></div>
+
+      <h3 style="font-size:1rem;margin:1.25rem 0 .5rem">Artinya buat lo (Analisis Pergeseran Hak & Kewajiban)</h3>
+      <ul class="findings" id="dampak-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    Informasi edukasi publik, bukan nasihat hukum. Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a>. <a href="https://github.com/vanovri/radar-loker" rel="noopener">Kode sumber</a>.
+  </footer>
+
+  <script type="module">
+    import { mountNav } from './src/nav.js';
+    import { PASAL_PRESETS, explainDiff } from './src/pasal.js';
+    mountNav('pasal');
+
+    const $ = (id) => document.getElementById(id);
+
+    function run(titleText = 'Perbandingan Pasal / Klausul Kontrak') {
+      const r = explainDiff($('teks-lama').value, $('teks-baru').value);
+      $('judul-diff').textContent = titleText;
+      $('stat-diff').textContent = `${r.stats.removed} kata dihapus · ${r.stats.added} kata ditambahkan · ${r.impacts.length} pergeseran penting terdeteksi`;
+
+      const frag = document.createDocumentFragment();
+      for (const op of r.ops) {
+        if (op.type === 'same') {
+          frag.append(document.createTextNode(op.text + ' '));
+        } else if (op.type === 'del') {
+          const del = document.createElement('del');
+          del.textContent = op.text;
+          frag.append(del, document.createTextNode(' '));
+        } else {
+          const ins = document.createElement('ins');
+          ins.textContent = op.text;
+          frag.append(ins, document.createTextNode(' '));
+        }
+      }
+      $('kotak-diff').replaceChildren(frag);
+
+      $('dampak-list').replaceChildren(
+        ...r.impacts.map((imp) => {
+          const li = document.createElement('li');
+          li.className = `finding sev-${imp.tone}`;
+          const h3 = document.createElement('h3');
+          const bdg = document.createElement('span');
+          bdg.className = 'badge';
+          bdg.textContent = imp.tone === 'bahaya' ? 'Bahaya' : imp.tone === 'aman' ? 'Positif' : 'Perhatian';
+          h3.append(bdg, imp.title);
+          const p = document.createElement('p');
+          p.textContent = imp.explain;
+          li.append(h3, p);
+          return li;
+        }),
+      );
+    }
+
+    function loadPreset(key) {
+      const p = PASAL_PRESETS[key];
+      $('label-lama').textContent = p.oldLabel;
+      $('label-baru').textContent = p.newLabel;
+      $('teks-lama').value = p.oldText;
+      $('teks-baru').value = p.newText;
+      run(p.title);
+    }
+
+    $('form-pasal').addEventListener('submit', (e) => { e.preventDefault(); run(); });
+    for (const b of document.querySelectorAll('[data-preset]')) {
+      b.addEventListener('click', () => loadPreset(b.dataset.preset));
+    }
+    loadPreset('kontrak_jebakan');
+  </script>
+</body>
+</html>

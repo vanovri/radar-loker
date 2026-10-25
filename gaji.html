@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Peta Gaji Fresh Grad RI vs UMK & Kalkulator Layak Hidup — Radar Loker</title>
+  <meta name="description" content="Bandingkan tawaran gaji fresh graduate dengan UMK 16 kota industri utama, rentang pasar per bidang, simulasi sisa gaji setelah kos & makan, plus script nego HRD.">
+  <meta property="og:title" content="Peta Gaji Fresh Grad RI vs UMK — Gaji segini cukup buat hidup?">
+  <meta property="og:description" content="Cek apakah tawaran gaji di bawah UMK, pas-pasan, atau kompetitif + generator kalimat nego gaji.">
+  <meta property="og:url" content="https://vanovri.github.io/radar-loker/gaji.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://vanovri.github.io/radar-loker/gaji.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Tawaran gaji segini, layak atau di-lowball?</h1>
+      <p>Bandingkan tawaran gaji dengan UMK 16 kota industri utama, rentang pasar fresh graduate per bidang, dan hitung sisa uang bersih setelah kos, makan, dan transport.</p>
+    </div>
+
+    <form id="form-gaji" class="card">
+      <div class="grid-2">
+        <div class="field">
+          <label for="kota">Kota / Kabupaten Penempatan</label>
+          <select id="kota" name="kota"></select>
+        </div>
+        <div class="field">
+          <label for="bidang">Bidang Posisi</label>
+          <select id="bidang" name="bidang"></select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="nominal">Tawaran Gaji Gross per Bulan (Rp)</label>
+        <span class="hint">Masukkan angka penuh, misal 5500000 untuk Rp5,5 juta.</span>
+        <input type="number" id="nominal" name="nominal" value="5500000" min="500000" step="100000" required>
+      </div>
+      <div class="row">
+        <button type="submit" class="primary">Hitung Kelayakan & Nego</button>
+        <button type="button" class="ghost" data-preset="bekasi-kab,elektro,4200000">Coba Tawaran di Bawah UMK</button>
+        <button type="button" class="ghost" data-preset="jakarta,software,7500000">Coba Software Jakarta 7,5 Jt</button>
+      </div>
+    </form>
+
+    <section id="hasil" class="result card" hidden aria-live="polite">
+      <div class="score" id="verdict-box">
+        <div class="score-num" style="font-size:clamp(2.2rem,7vw,3.4rem)"><span id="selisih">0%</span><small style="display:block;font-size:.35em">vs UMK</small></div>
+        <div>
+          <p class="score-label" id="verdict-label">—</p>
+          <p class="note" id="verdict-desc" style="margin:.35rem 0 0"></p>
+        </div>
+      </div>
+
+      <div class="stats" id="angka-grid" style="margin-top:1.1rem"></div>
+
+      <div class="finding sev-aman" style="margin-top:1.1rem">
+        <h3><span class="badge">Script Nego</span> Kalimat balasan siap kirim ke HRD</h3>
+        <p id="nego-teks"></p>
+        <div class="row">
+          <button type="button" id="salin-nego">Salin Script Nego</button>
+          <span id="status" class="note" role="status"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Patokan UMK & Biaya Hidup Lajang 16 Kota</h2>
+      <dl class="bars" id="tabel-umk"></dl>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a>. <a href="https://github.com/vanovri/radar-loker" rel="noopener">Kode sumber</a>.
+  </footer>
+
+  <script type="module">
+    import { mountNav } from './src/nav.js';
+    import { CITIES, ROLES, evaluateOffer } from './src/gaji.js';
+    mountNav('gaji');
+
+    const $ = (id) => document.getElementById(id);
+    const rp = (n) => 'Rp' + Math.round(n).toLocaleString('id-ID');
+
+    $('kota').replaceChildren(...CITIES.map((c) => new Option(`${c.name} (UMK ${rp(c.umk)})`, c.id)));
+    $('bidang').replaceChildren(...ROLES.map((r) => new Option(r.name, r.id)));
+
+    const maxUmk = Math.max(...CITIES.map((c) => c.umk));
+    $('tabel-umk').replaceChildren(
+      ...CITIES.map((c) => {
+        const div = document.createElement('div');
+        div.className = 'bar';
+        div.style.gridTemplateColumns = 'minmax(160px, 38%) 1fr 12ch';
+        const dt = document.createElement('dt');
+        dt.textContent = c.name;
+        const dd = document.createElement('dd');
+        const i = document.createElement('i');
+        i.style.setProperty('--w', `${(c.umk / maxUmk) * 100}%`);
+        dd.append(i);
+        const out = document.createElement('output');
+        out.textContent = rp(c.umk);
+        div.append(dt, dd, out);
+        return div;
+      }),
+    );
+
+    function run() {
+      const r = evaluateOffer({
+        cityId: $('kota').value,
+        roleId: $('bidang').value,
+        offerGross: Number($('nominal').value),
+      });
+      $('hasil').hidden = false;
+      $('verdict-box').dataset.level = r.verdict.tone;
+      $('selisih').textContent = (r.diffUmkPct >= 0 ? '+' : '') + r.diffUmkPct + '%';
+      $('verdict-label').textContent = r.verdict.label;
+      $('verdict-desc').textContent = r.verdict.summary;
+
+      const cards = [
+        [rp(r.city.umk), `UMK ${r.city.name}`],
+        [`${rp(r.market.min)} – ${rp(r.market.max)}`, 'Rentang pasar fresh grad'],
+        [rp(r.net), 'Estimasi THP bersih (-4% BPJS)'],
+        [rp(r.leftover), `Sisa setelah kos+makan (${rp(r.livingCost)})`, r.leftover <= 0],
+      ];
+      $('angka-grid').replaceChildren(
+        ...cards.map(([v, l, bad]) => {
+          const d = document.createElement('div');
+          d.className = `card stat${bad ? ' zero' : ''}`;
+          const b = document.createElement('b');
+          b.style.fontSize = '1.2rem';
+          b.textContent = v;
+          const s = document.createElement('span');
+          s.textContent = l;
+          d.append(b, s);
+          return d;
+        }),
+      );
+      $('nego-teks').textContent = r.negoScript;
+    }
+
+    $('form-gaji').addEventListener('submit', (e) => { e.preventDefault(); run(); });
+    for (const b of document.querySelectorAll('[data-preset]')) {
+      b.addEventListener('click', () => {
+        const [c, r, n] = b.dataset.preset.split(',');
+        $('kota').value = c;
+        $('bidang').value = r;
+        $('nominal').value = n;
+        run();
+      });
+    }
+    $('salin-nego').addEventListener('click', async () => {
+      await navigator.clipboard.writeText($('nego-teks').textContent);
+      $('status').textContent = 'Script nego tersalin.';
+    });
+    run();
+  </script>
+</body>
+</html>

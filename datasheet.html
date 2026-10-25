@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Datasheet Register → STM32 HAL & ESP32 C Driver Generator — Radar Loker Lab</title>
+  <meta name="description" content="Ubah spesifikasi register sensor I2C/SPI (INA219, MPU6050, BMP280, atau custom) menjadi kode C driver siap pakai (.h, .c, dan mock unit test).">
+  <meta property="og:title" content="Datasheet Register → C Driver Generator (STM32 HAL & ESP32)">
+  <meta property="og:description" content="Generate header bitfield mask, fungsi read/write endian-safe, dan unit test C otomatis.">
+  <meta property="og:url" content="https://vanovri.github.io/radar-loker/datasheet.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://vanovri.github.io/radar-loker/datasheet.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Datasheet Register → C Driver dalam 1 klik.</h1>
+      <p>Masukkan tabel register sensor I2C/SPI (atau pilih preset INA219, MPU6050, BMP280). Generator menyusun file <code>.h</code> (lengkap dengan bitmask & shift), <code>.c</code> (STM32 HAL / ESP-IDF), serta <code>test.c</code>.</p>
+    </div>
+
+    <form id="form-ds" class="card">
+      <fieldset>
+        <legend>Target contoh wrapper I/O</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="platform" value="stm32" checked> STM32 HAL (I2C_HandleTypeDef)</label>
+          <label><input type="radio" name="platform" value="esp32"> ESP-IDF (i2c_master_write_read_device)</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="spec-input">Spesifikasi Register Map</label>
+        <span class="hint">Format: baris 1 <code>NAME=… BUS=I2C ADDR=0x40 WIDTH=16</code>, lalu <code>NAMA_REG ALAMAT RW RESET BITFIELD:bit:lebar # Deskripsi</code></span>
+        <textarea id="spec-input" spellcheck="false" style="font-family:var(--mono);font-size:.84rem;min-height:210px"></textarea>
+      </div>
+
+      <div class="row">
+        <button type="submit" class="primary">Generate Driver C + Unit Test</button>
+        <button type="button" class="ghost" data-sensor="ina219">Preset INA219 (16-bit Power)</button>
+        <button type="button" class="ghost" data-sensor="mpu6050">Preset MPU6050 (IMU + WHO_AM_I)</button>
+        <button type="button" class="ghost" data-sensor="bmp280">Preset BMP280 (Pressure)</button>
+      </div>
+    </form>
+
+    <section id="hasil" class="result card" aria-live="polite">
+      <div class="row" style="margin-top:0;justify-content:space-between">
+        <b id="file-label">ina219.h / ina219.c / test_ina219.c</b>
+        <span id="status" class="note" role="status"></span>
+      </div>
+
+      <h3 style="font-size:.95rem;margin:1rem 0 .25rem">1. Header (<code id="h-name">ina219.h</code>) <button type="button" class="ghost" data-copy="out-h" style="padding:.2rem .6rem;font-size:.8rem">Salin .h</button></h3>
+      <pre class="codebox"><code id="out-h"></code></pre>
+
+      <h3 style="font-size:.95rem;margin:1rem 0 .25rem">2. Implementation (<code id="c-name">ina219.c</code>) <button type="button" class="ghost" data-copy="out-c" style="padding:.2rem .6rem;font-size:.8rem">Salin .c</button></h3>
+      <pre class="codebox"><code id="out-c"></code></pre>
+
+      <h3 style="font-size:.95rem;margin:1rem 0 .25rem">3. Mock Bus Unit Test (<code id="t-name">test_ina219.c</code>) <button type="button" class="ghost" data-copy="out-t" style="padding:.2rem .6rem;font-size:.8rem">Salin test.c</button></h3>
+      <pre class="codebox"><code id="out-t"></code></pre>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a> (S1 Teknik Elektro Undip). <a href="https://github.com/vanovri/radar-loker" rel="noopener">Kode sumber</a>.
+  </footer>
+
+  <script type="module">
+    import { mountNav } from './src/nav.js';
+    import { SENSOR_PRESETS, specToText, parseSpecText, generateDriver } from './src/datasheet.js';
+    mountNav('datasheet');
+
+    const $ = (id) => document.getElementById(id);
+    let activePreset = SENSOR_PRESETS.ina219;
+
+    function render(spec) {
+      const platform = document.getElementById('form-ds').elements.platform.value;
+      const out = generateDriver(spec, platform);
+      $('file-label').textContent = `${out.fileBase}.h · ${out.fileBase}.c · test_${out.fileBase}.c`;
+      $('h-name').textContent = `${out.fileBase}.h`;
+      $('c-name').textContent = `${out.fileBase}.c`;
+      $('t-name').textContent = `test_${out.fileBase}.c`;
+      $('out-h').textContent = out.header;
+      $('out-c').textContent = out.source;
+      $('out-t').textContent = out.test;
+    }
+
+    function loadSensor(key) {
+      activePreset = SENSOR_PRESETS[key];
+      $('spec-input').value = specToText(activePreset);
+      render(activePreset);
+    }
+
+    $('form-ds').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const parsed = parseSpecText($('spec-input').value);
+      if (activePreset && parsed.name === activePreset.name && activePreset.idReg) {
+        parsed.idReg = activePreset.idReg;
+      }
+      render(parsed);
+    });
+
+    for (const b of document.querySelectorAll('[data-sensor]')) {
+      b.addEventListener('click', () => loadSensor(b.dataset.sensor));
+    }
+    for (const b of document.querySelectorAll('[data-copy]')) {
+      b.addEventListener('click', async () => {
+        await navigator.clipboard.writeText($(b.dataset.copy).textContent);
+        $('status').textContent = `Tersalin (${b.textContent}).`;
+      });
+    }
+    loadSensor('ina219');
+  </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Simulator Sidang Skripsi — Dibantai Dosen Penguji sebelum Sidang Beneran</title>
+  <meta name="description" content="Masukkan judul dan abstrak skripsi, pilih karakter dosen penguji galak, dengarkan pertanyaannya lewat suara, dan uji skor kesiapan jawaban sidangmu.">
+  <meta property="og:title" content="Simulator Sidang Skripsi — Uji Mental sebelum Ruang Sidang">
+  <meta property="og:description" content="Deteksi celah metodologi, klaim tanpa angka, dan latihan jawab 5 pertanyaan mematikan dosen penguji.">
+  <meta property="og:url" content="https://vanovri.github.io/radar-loker/sidang.html">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://vanovri.github.io/radar-loker/sidang.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2714%27 fill=%27%23c4161c%27/%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%276%27 fill=%27white%27/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site wrap">
+    <a class="logo" href="./">Radar<span>Loker</span></a>
+    <nav></nav>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Dibantai dosen penguji di sini, biar lulus di ruang sidang.</h1>
+      <p>Tempel judul dan abstrak skripsi lo. Sistem membedah klaim yang belum berangka, ketiadaan baseline, dan celah sampel — lalu membacakan 5 pertanyaan maut dosen penguji.</p>
+    </div>
+
+    <form id="form-sidang" class="card">
+      <fieldset>
+        <legend>Pilih karakter dosen penguji</legend>
+        <div class="radio-row">
+          <label><input type="radio" name="dosen" value="bambang" checked> Prof. Bambang (Metodologi & Statistik)</label>
+          <label><input type="radio" name="dosen" value="ratna"> Dr. Ratna (Kelayakan Industri)</label>
+          <label><input type="radio" name="dosen" value="hendra"> Dr. Hendra (Detail Teknis & Batasan)</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="judul">Judul Skripsi</label>
+        <input type="text" id="judul" name="judul" required placeholder="Contoh: Sistem Akuisisi Sinyal EMG 4 kHz Berbasis STM32…">
+      </div>
+      <div class="field">
+        <label for="metode">Metode / Alat Utama</label>
+        <input type="text" id="metode" name="metode" placeholder="Contoh: ADC 12-bit DMA STM32F411, filter IIR, telemetri UART Python">
+      </div>
+      <div class="field">
+        <label for="abstrak">Abstrak / Ringkasan Bab 1–4</label>
+        <textarea id="abstrak" name="abstrak" required placeholder="Tempel abstrak skripsi di sini…"></textarea>
+      </div>
+
+      <div class="row">
+        <button type="submit" class="primary">Mulai Sidang (Generate 5 Pertanyaan)</button>
+        <button type="button" class="ghost" data-preset="emg">Preset Teknik Elektro (STM32 EMG)</button>
+        <button type="button" class="ghost" data-preset="cnn">Preset Informatika (CNN Padi)</button>
+        <button type="button" class="ghost" data-preset="sdm">Preset Manajemen (Regresi SDM)</button>
+      </div>
+    </form>
+
+    <section id="arena" class="result card" hidden aria-live="polite">
+      <div class="row" style="justify-content:space-between;margin-top:0">
+        <div>
+          <b id="nama-dosen" style="font-size:1.1rem"></b>
+          <p class="note" id="gaya-dosen" style="margin:0"></p>
+        </div>
+        <button type="button" id="suara-semua">🔊 Bacakan Pertanyaan Aktif</button>
+      </div>
+
+      <ul class="findings" id="daftar-q"></ul>
+
+      <div class="card" style="margin-top:1.25rem;background:var(--bg)">
+        <div class="score" id="skor-box" data-level="waspada">
+          <div class="score-num"><span id="rata-skor">0</span><small>/100</small></div>
+          <div>
+            <p class="score-label" id="status-sidang">Jawab minimal 1 pertanyaan di atas untuk melihat skor kesiapan</p>
+            <p class="note" id="diag-ringkas" style="margin:.35rem 0 0"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site wrap">
+    Dibuat oleh <a href="https://ardhyanovri.my.id" rel="noopener">Ardhya Novri</a>. <a href="https://github.com/vanovri/radar-loker" rel="noopener">Kode sumber</a>.
+  </footer>
+
+  <script type="module">
+    import { mountNav } from './src/nav.js';
+    import { PRESET_THESES, generateQuestions, scoreAnswer } from './src/sidang.js';
+    mountNav('sidang');
+
+    const $ = (id) => document.getElementById(id);
+    let current = null;
+    const scores = {};
+
+    function speak(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = 'id-ID';
+      u.rate = 1.02;
+      window.speechSynthesis.speak(u);
+    }
+
+    function updateTotal() {
+      const vals = Object.values(scores);
+      if (!vals.length) return;
+      const avg = Math.round(vals.reduce((a, b) => a + b, 0) / vals.length);
+      $('rata-skor').textContent = String(avg);
+      $('skor-box').dataset.level = avg >= 75 ? 'aman' : avg >= 50 ? 'waspada' : 'bahaya';
+      $('status-sidang').textContent =
+        avg >= 75
+          ? `Lulus meyakinkan (${vals.length}/5 terjawab)`
+          : avg >= 50
+            ? `Lulus bersyarat dengan revisi (${vals.length}/5 terjawab)`
+            : `Rawan disuruh ulang seminar/sidang (${vals.length}/5 terjawab)`;
+    }
+
+    function run() {
+      const dosen = document.getElementById('form-sidang').elements.dosen.value;
+      current = generateQuestions({
+        title: $('judul').value,
+        method: $('metode').value,
+        abstract: $('abstrak').value,
+      }, dosen);
+
+      Object.keys(scores).forEach((k) => delete scores[k]);
+      $('arena').hidden = false;
+      $('nama-dosen').textContent = `${current.examiner.name} — ${current.examiner.role}`;
+      $('gaya-dosen').textContent = current.examiner.style;
+      $('diag-ringkas').textContent = `Deteksi naskah: ${current.diagnostics.metricsCount} angka terukur · ${current.diagnostics.vagueCount} klaim kata sifat tanpa angka · Baseline pembanding: ${current.diagnostics.hasBaseline ? 'Ada' : 'Belum terlihat'}`;
+      $('rata-skor').textContent = '0';
+
+      $('daftar-q').replaceChildren(
+        ...current.questions.map((q, idx) => {
+          const li = document.createElement('li');
+          li.className = 'finding sev-bahaya';
+
+          const h3 = document.createElement('h3');
+          const bdg = document.createElement('span');
+          bdg.className = 'badge';
+          bdg.textContent = `Pertanyaan ${idx + 1} · ${q.aspect}`;
+          h3.append(bdg);
+
+          const pq = document.createElement('p');
+          pq.style.fontWeight = '600';
+          pq.textContent = `"${q.question}"`;
+
+          const ph = document.createElement('p');
+          ph.className = 'ref';
+          ph.textContent = `Kisi-kisi penguji: ${q.hint}`;
+
+          const ta = document.createElement('textarea');
+          ta.style.minHeight = '90px';
+          ta.style.marginTop = '0.5rem';
+          ta.placeholder = 'Ketik jawaban sidangmu di sini (sertakan angka, alasan "karena/dibandingkan", dan batasan sistem)…';
+          ta.setAttribute('aria-label', `Jawaban untuk pertanyaan ${idx + 1}`);
+
+          const row = document.createElement('div');
+          row.className = 'row';
+          const btnCheck = document.createElement('button');
+          btnCheck.type = 'button';
+          btnCheck.className = 'primary';
+          btnCheck.textContent = 'Nilai Jawaban';
+          const btnSpeak = document.createElement('button');
+          btnSpeak.type = 'button';
+          btnSpeak.className = 'ghost';
+          btnSpeak.textContent = '🔊 Dengar';
+          const fb = document.createElement('span');
+          fb.className = 'note';
+
+          btnSpeak.addEventListener('click', () => speak(q.question));
+          btnCheck.addEventListener('click', () => {
+            const res = scoreAnswer(ta.value);
+            scores[q.id] = res.score;
+            li.className = `finding sev-${res.score >= 75 ? 'aman' : res.score >= 50 ? 'waspada' : 'bahaya'}`;
+            fb.textContent = `Skor: ${res.score}/100 — ${res.feedback}`;
+            updateTotal();
+          });
+
+          row.append(btnCheck, btnSpeak, fb);
+          li.append(h3, pq, ph, ta, row);
+          return li;
+        }),
+      );
+    }
+
+    function loadPreset(key) {
+      const p = PRESET_THESES[key];
+      $('judul').value = p.title;
+      $('metode').value = p.method;
+      $('abstrak').value = p.abstract;
+      run();
+    }
+
+    $('form-sidang').addEventListener('submit', (e) => { e.preventDefault(); run(); });
+    for (const b of document.querySelectorAll('[data-preset]')) {
+      b.addEventListener('click', () => loadPreset(b.dataset.preset));
+    }
+    $('suara-semua').addEventListener('click', () => {
+      if (current?.questions?.[0]) speak(current.questions[0].question);
+    });
+    loadPreset('emg');
+  </script>
+</body>
+</html>

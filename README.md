@@ -1,68 +1,40 @@
-# Radar Loker
+# Radar Loker & Lab (7-in-1 Suite)
 
-**Live:** https://vanovri.github.io/radar-loker/ · [Dashboard eksperimen](https://vanovri.github.io/radar-loker/eksperimen.html)
+**Live Suite:** https://vanovri.github.io/radar-loker/
 
-Dua hal dalam satu situs statis:
+Arsitektur: **1 monorepo statis (tanpa backend, tanpa biaya server, 100% jalan di browser)** yang menggabungkan **4 alat Karir & Pencari Kerja** dan **3 alat Lab Teknis & Publik** dengan URL mandiri masing-masing:
 
-1. **Detektor red flag lowongan** (`index.html`). Tempel teks lowongan, keluar skor 0–100 + penjelasan tiap red flag: biaya pendaftaran, penahanan ijazah, kerja tugas online, minta OTP, gaji di bawah UMP, gaji tidak wajar untuk pemula, denda resign, jam kerja berlebih, dll. Berjalan 100% di browser — tanpa API, tanpa server, teks tidak dikirim ke mana pun.
-2. **Eksperimen "30 Hari AI Ngelamarin Kerja Buat Gw"** (`eksperimen.html`). Dashboard publik dari data lamaran asli. Hanya agregat; nama perusahaan dan portal karier milik perusahaan disamarkan.
+| # | Kategori | Proyek | URL Live |
+|---|---|---|---|
+| 01 | Karir | **Detektor Loker Red Flag** — Cek 18 pola penipuan loker (tahan ijazah SE Menaker M/5/HK.04.00/V/2025, pungutan biaya, task scam, gaji < UMP) | [/index.html](https://vanovri.github.io/radar-loker/) |
+| 02 | Karir | **Eksperimen 30 Hari AI Lamar Kerja** — Dashboard publik 70 lamaran asli ke 54 perusahaan (agregat privasi-aman) | [/eksperimen.html](https://vanovri.github.io/radar-loker/eksperimen.html) |
+| 03 | Lab | **Simulator Sidang Skripsi** — Bedah klaim abstrak + 3 karakter dosen penguji galak dengan suara (`speechSynthesis`) & penilai jawaban | [/sidang.html](https://vanovri.github.io/radar-loker/sidang.html) |
+| 04 | Karir | **Peta Gaji Fresh Grad RI vs UMK** — Bandingkan tawaran gaji dengan UMK 16 kota industri, rentang pasar 5 bidang, sisa THP setelah kos+makan, & script nego HRD | [/gaji.html](https://vanovri.github.io/radar-loker/gaji.html) |
+| 05 | Karir | **Roast CV ala HRD** — Audit metrik, kata kerja aktif vs pasif, klise kosong, & kebocoran NIK dengan 3 persona (HRD Jaksel, HRD Pabrik, Robot ATS) + auto-rewrite | [/roast-cv.html](https://vanovri.github.io/radar-loker/roast-cv.html) |
+| 06 | Lab | **Datasheet → Driver Generator** — Ubah tabel register I2C/SPI (INA219, MPU6050, BMP280, custom) menjadi `.h`, `.c` (STM32 HAL / ESP-IDF), dan `test.c` | [/datasheet.html](https://vanovri.github.io/radar-loker/datasheet.html) |
+| 07 | Lab | **Pasal & Kontrak Diff Explainer** — Word-level diff UU Ketenagakerjaan vs UU Cipta Kerja & Kontrak PKWT wajar vs jebakan + terjemahan dampak hukum | [/pasal.html](https://vanovri.github.io/radar-loker/pasal.html) |
 
-## Jalankan lokal
+## Jalankan & Uji Lokal
 
 ```powershell
-npm test            # 10 tes rule engine (node:test, tanpa dependency)
-npm run data        # bangun data/eksperimen.json dari CSV crosscheck Codex
+npm test            # 15 tes unit seluruh engine (node:test, 0 dependency)
+npm run data        # bangun data/eksperimen.json dari CSV crosscheck
 npm run dev         # http://127.0.0.1:5173
 ```
 
-`eksperimen.html` memakai `fetch`, jadi harus dibuka lewat server (bukan `file://`).
-
-## Update data eksperimen
-
-```powershell
-python scripts/build_data.py "C:\path\ke\Crosscheck_Lamaran_<tanggal>.csv" --start 2026-10-23
-```
-
-CSV butuh kolom `portal,id,posisi,perusahaan,status`. Tambah catatan harian di `data/log.json`.
-
-> `--with-roles` menyertakan nama posisi + perusahaan. Jangan pakai flag ini untuk versi yang dipublikasikan.
-
-## Scan banyak lowongan (bahan konten)
-
-Simpan tiap lowongan sebagai `.txt` di satu folder, lalu:
-
-```powershell
-node scripts/scan.mjs .\lowongan\
-```
-
-Keluar: distribusi level, red flag paling sering, 10 skor tertinggi.
-
-## Deploy (GitHub Pages)
-
-```powershell
-git init; git add .; git commit -m "feat: radar loker mvp"
-gh repo create radar-loker --public --source . --push
-gh api -X POST repos/{owner}/radar-loker/pages -f "source[branch]=main" -f "source[path]=/"
-```
-
-Situs statis murni, jadi Netlify/Vercel/Cloudflare Pages juga bisa (drag-drop folder).
-
-## Struktur
+## Struktur Modul
 
 ```
-src/rules.js        rule engine (aturan, parser gaji, skor)
-src/app.js          UI detektor
-tests/              tes node:test
-scripts/build_data.py   CSV lamaran → data/eksperimen.json (agregat)
-scripts/scan.mjs    scan banyak lowongan sekaligus
-data/log.json       catatan harian eksperimen (edit manual)
-konten/             draf thread & rencana konten
+src/
+  nav.js            navigasi terpadu 7 proyek
+  rules.js          #1 engine detektor red flag loker
+  app.js            #1 UI detektor + launchpad grid 7 proyek
+  sidang.js         #3 engine simulator sidang skripsi & evaluator jawaban
+  gaji.js           #4 engine UMK 16 kota, pasar fresh grad, & script nego
+  roast.js          #5 engine audit CV, 3 persona roasting, & XYZ rewriter
+  datasheet.js      #6 parser register map & C codegen (STM32 HAL / ESP-IDF)
+  pasal.js          #7 LCS word-diff & detektor pergeseran hak hukum/kontrak
+tests/
+  rules.test.mjs    10 tes unit detektor loker
+  suite.test.mjs    5 tes unit untuk proyek #3, #4, #5, #6, #7
 ```
-
-## Menambah aturan
-
-Tambah objek ke `RULES` di `src/rules.js` (`id`, `severity`, `weight`, `patterns`, `why`, `tip`, opsional `ref` + `negatable`), lalu tambah tes di `tests/rules.test.mjs`. Setiap aturan wajib punya penjelasan yang bisa dipertanggungjawabkan; dasar hukum hanya dicantumkan kalau sudah diverifikasi.
-
-## Batasan
-
-Heuristik regex, bukan AI. Bisa salah positif (mis. kata "denda" dalam konteks lain) dan salah negatif (penipuan dengan bahasa rapi). Skor rendah ≠ lowongan pasti asli.
