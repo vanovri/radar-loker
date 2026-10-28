@@ -1,5 +1,7 @@
 # Radar Loker & Lab (7-in-1 Suite)
 
+Suite ini dikembangkan dengan bantuan AI. Lima belas tes Node.js lulus pada 27 Oktober 2026. Skor dan masukan berasal dari aturan deterministik. Hasilnya tidak membuktikan akurasi deteksi penipuan, keputusan perekrut, atau hasil sidang. Referensi hukum dan gaji merupakan snapshot bertanggal. Kode driver STM32/ESP32 yang dihasilkan belum diuji pada perangkat fisik.
+
 **Live Suite:** https://radar-loker.vercel.app/
 
 Arsitektur: **1 monorepo statis (tanpa backend, tanpa biaya server, 100% jalan di browser)** yang menggabungkan **4 alat Karir & Pencari Kerja** dan **3 alat Lab Teknis & Publik** dengan URL mandiri masing-masing:
