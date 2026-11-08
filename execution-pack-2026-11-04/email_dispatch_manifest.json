@@ -1,0 +1,547 @@
+{
+  "generated_at_wib": "2026-11-04T13:13:24.801001+07:00",
+  "candidate": "Ardhya Novri Ramadhan, S.T.",
+  "sender_email": "ardhyasan@gmail.com",
+  "safety_policy": "STAGE_ONLY_NO_UNSOLICITED_LIVE_SEND",
+  "locked_documents_policy": {
+    "master_cv": {
+      "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+      "bytes": 99026,
+      "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+    },
+    "official_ijazah": {
+      "filename": "Ijazah Ardhya Novri.pdf",
+      "bytes": 1056099,
+      "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab",
+      "nin": "001008202012026100162"
+    }
+  },
+  "summary": {
+    "total_packages_inspected": 10,
+    "all_rfc822_and_hash_checks_passed": true,
+    "portal_already_submitted_count": 1,
+    "pending_staged_draft_count": 9
+  },
+  "packages": [
+    {
+      "uid": "RADAR-261104-01",
+      "rank": 1,
+      "company": "PT Chandra Asri Pacific Tbk (Chandra Asri Group)",
+      "role": "ASPIRE Graduate Development Program (GDP) — Operations & Engineering Track (Electrical / Instrumentation)",
+      "fit_score": 94,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://careers.chandra-asri.com/",
+      "submission_mechanism": "Portal SSO (SAP SuccessFactors careers.chandra-asri.com) + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-01.eml",
+      "eml_filename": "RADAR-261104-01.eml",
+      "eml_size_bytes": 1584630,
+      "eml_sha256": "ee28474aec133e122e5aa4f253e6504d8ec431094708a2016baa47d6e277e48f",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruitment@chandra-asri.com",
+        "Subject": "Application - ASPIRE Graduate Development Program (Electrical Engineering) - Ardhya Novri Ramadhan",
+        "Date": "Wed, 04 Nov 2026 06:43:09 +0700",
+        "Message-ID": "<179374938970.16856.9718707584521834331@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-01",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruitment%40chandra-asri.com&su=Application+-+ASPIRE+Graduate+Development+Program+%28Electrical+Engineering%29+-+Ardhya+Novri+Ramadhan&body=Dear+Talent+Acquisition+Team+at+PT+Chandra+Asri+Pacific+Tbk+%28Chandra+Asri+Group%29%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+ASPIRE+Graduate+Development+Program+%28GDP%29+%E2%80%94+Operations+%26+Engineering+Track+%28Electrical+%2F+Instrumentation%29+at+PT+Chandra+Asri+Pacific+Tbk.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+%28Electronics+Concentration%29+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28148+credits%2C+National+Diploma+Number%3A+001008202012026100162%2C+exceeding+the+minimum+3.30+GPA+requirement%29.%0D%0A%0D%0AMy+practical+exposure+to+critical+electrical+distribution%2C+UPS%2Fconverter+maintenance%2C+protection+relays%2C+substation+inspection%2C+and+SCADA%2FPLC+systems+at+Soekarno-Hatta+International+Airport%2C+combined+with+my+STM32+4%2C000+Hz+nominal+signal-acquisition+and+instrumentation+thesis%2C+directly+aligns+with+plant+reliability+and+instrumentation+engineering+across+Chandra+Asri%27s+Cilegon+petrochemical+complex.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+Chandra+Asri+Pacific+Tbk+%28Chandra+Asri+Group%29.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruitment%40chandra-asri.com?subject=Application+-+ASPIRE+Graduate+Development+Program+%28Electrical+Engineering%29+-+Ardhya+Novri+Ramadhan&body=Dear+Talent+Acquisition+Team+at+PT+Chandra+Asri+Pacific+Tbk+%28Chandra+Asri+Group%29%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+ASPIRE+Graduate+Development+Program+%28GDP%29+%E2%80%94+Operations+%26+Engineering+Track+%28Electrical+%2F+Instrumentation%29+at+PT+Chandra+Asri+Pacific+Tbk.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+%28Electronics+Concentration%29+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28148+credits%2C+National+Diploma+Number%3A+001008202012026100162%2C+exceeding+the+minimum+3.30+GPA+requirement%29.%0D%0A%0D%0AMy+practical+exposure+to+critical+electrical+distribution%2C+UPS%2Fconverter+maintenance%2C+protection+relays%2C+substation+inspection%2C+and+SCADA%2FPLC+systems+at+Soekarno-Hatta+International+Airport%2C+combined+with+my+STM32+4%2C000+Hz+nominal+signal-acquisition+and+instrumentation+thesis%2C+directly+aligns+with+plant+reliability+and+instrumentation+engineering+across+Chandra+Asri%27s+Cilegon+petrochemical+complex.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+Chandra+Asri+Pacific+Tbk+%28Chandra+Asri+Group%29.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-02",
+      "rank": 2,
+      "company": "PT Hartono Istana Teknologi (Polytron)",
+      "role": "Hardware Engineer Trainee / EV R&D Electrical & Embedded Engineer",
+      "fit_score": 93,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://polytron.co.id/",
+      "submission_mechanism": "Official Polytron Website / Career Portal (polytron.co.id / career.polytron.co.id) + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-02.eml",
+      "eml_filename": "RADAR-261104-02.eml",
+      "eml_size_bytes": 1584547,
+      "eml_sha256": "601a80dfd78f38e22bba1518ef2341c3eea269a1ee2c401a2634d50f7793fa72",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruitment@polytron.co.id",
+        "Subject": "Hardware Engineer Trainee - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+        "Date": "Wed, 04 Nov 2026 06:43:10 +0700",
+        "Message-ID": "<179374939003.16856.4137067962785498056@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-02",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruitment%40polytron.co.id&su=Hardware+Engineer+Trainee+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Hartono+Istana+Teknologi+%28Polytron%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Hardware+Engineer+Trainee+%2F+EV+R%26D+Electrical+%26+Embedded+Engineer+di+PT+Hartono+Istana+Teknologi+%28Polytron%29.%0D%0A%0D%0AKonsentrasi+Elektronika+saya+di+UNDIP%2C+perancangan+akuisisi+sinyal+mikrokontroler+STM32F411CEU6+%2812-bit+ADC+%2B+DMA+nominal+4.000+Hz%2C+filter+digital+IIR+Butterworth%2FNotch%29%2C+pengembangan+prototipe+kontrol+motor+PWM+berbasis+ESP32+di+Redesma+Technologies%2C+serta+pengalaman+membimbing+praktikum+perakitan+dan+troubleshooting+rangkaian+selama+2+semester+sangat+selaras+dengan+riset+dan+pengembangan+hardware+elektronik+serta+EV+Polytron+di+Jawa+Tengah+dan+Jakarta.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Hartono+Istana+Teknologi+%28Polytron%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruitment%40polytron.co.id?subject=Hardware+Engineer+Trainee+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Hartono+Istana+Teknologi+%28Polytron%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Hardware+Engineer+Trainee+%2F+EV+R%26D+Electrical+%26+Embedded+Engineer+di+PT+Hartono+Istana+Teknologi+%28Polytron%29.%0D%0A%0D%0AKonsentrasi+Elektronika+saya+di+UNDIP%2C+perancangan+akuisisi+sinyal+mikrokontroler+STM32F411CEU6+%2812-bit+ADC+%2B+DMA+nominal+4.000+Hz%2C+filter+digital+IIR+Butterworth%2FNotch%29%2C+pengembangan+prototipe+kontrol+motor+PWM+berbasis+ESP32+di+Redesma+Technologies%2C+serta+pengalaman+membimbing+praktikum+perakitan+dan+troubleshooting+rangkaian+selama+2+semester+sangat+selaras+dengan+riset+dan+pengembangan+hardware+elektronik+serta+EV+Polytron+di+Jawa+Tengah+dan+Jakarta.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Hartono+Istana+Teknologi+%28Polytron%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-03",
+      "rank": 3,
+      "company": "PT Indonesia Epson Industry",
+      "role": "Automation Electrical Engineering Staff (Fresh Graduate)",
+      "fit_score": 92,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://id.jobstreet.com/id/PT-Indonesia-Epson-Industry-jobs",
+      "submission_mechanism": "JobStreet Verified Account Quick Apply (Cloudflare-protected portal) + Official Epson Recruitment Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-03.eml",
+      "eml_filename": "RADAR-261104-03.eml",
+      "eml_size_bytes": 1584644,
+      "eml_sha256": "da0763dc855047a2e4cc9bc28de52eb62fb05942bcf9bbf55f0b9e0803085298",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "ieirecruitment@epi.epson.com.sg",
+        "Subject": "Automation Electrical Engineering - Ardhya Novri Ramadhan - Universitas Diponegoro",
+        "Date": "Wed, 04 Nov 2026 06:43:10 +0700",
+        "Message-ID": "<179374939034.16856.11928514357827392097@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-03",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=ieirecruitment%40epi.epson.com.sg&su=Automation+Electrical+Engineering+-+Ardhya+Novri+Ramadhan+-+Universitas+Diponegoro&body=Dear+Talent+Acquisition+Team+at+PT+Indonesia+Epson+Industry%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Automation+Electrical+Engineering+Staff+%28Fresh+Graduate%29+position+at+PT+Indonesia+Epson+Industry+%28EJIP+Industrial+Park%2C+Cikarang%29.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+%28Electronics+Concentration%29+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0APT+Indonesia+Epson+Industry%27s+Automation+Electrical+Engineering+role+requires+a+strong+combination+of+C%2C+Python%2C+embedded+control%2C+and+PLC%2Fautomation+fundamentals.+My+undergraduate+thesis+and+open-source+engineering+projects+directly+pair+embedded+C+firmware+%28STM32F411CEU6+12-bit+ADC+%2B+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%29+with+automated+Python+UART+telemetry+and+verification+%28%60uart-fixture-kit%60+with+130+passing+pytest+tests%29%2C+complemented+by+guided+PLC+installation+training+and+SCADA+monitoring+during+my+airport+electrical+internship.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+Indonesia+Epson+Industry.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:ieirecruitment%40epi.epson.com.sg?subject=Automation+Electrical+Engineering+-+Ardhya+Novri+Ramadhan+-+Universitas+Diponegoro&body=Dear+Talent+Acquisition+Team+at+PT+Indonesia+Epson+Industry%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Automation+Electrical+Engineering+Staff+%28Fresh+Graduate%29+position+at+PT+Indonesia+Epson+Industry+%28EJIP+Industrial+Park%2C+Cikarang%29.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+%28Electronics+Concentration%29+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0APT+Indonesia+Epson+Industry%27s+Automation+Electrical+Engineering+role+requires+a+strong+combination+of+C%2C+Python%2C+embedded+control%2C+and+PLC%2Fautomation+fundamentals.+My+undergraduate+thesis+and+open-source+engineering+projects+directly+pair+embedded+C+firmware+%28STM32F411CEU6+12-bit+ADC+%2B+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%29+with+automated+Python+UART+telemetry+and+verification+%28%60uart-fixture-kit%60+with+130+passing+pytest+tests%29%2C+complemented+by+guided+PLC+installation+training+and+SCADA+monitoring+during+my+airport+electrical+internship.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+Indonesia+Epson+Industry.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-04",
+      "rank": 4,
+      "company": "PT DCI Indonesia Tbk",
+      "role": "Electrical / Critical Facilities Operations Engineer (Fresh Graduate)",
+      "fit_score": 91,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://www.dci-indonesia.com/",
+      "submission_mechanism": "Official Website / LinkedIn Easy Apply + Direct Careers RFC-822 Email Package",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-04.eml",
+      "eml_filename": "RADAR-261104-04.eml",
+      "eml_size_bytes": 1584524,
+      "eml_sha256": "99b4be34252e02609b04b933a2226493a2c10ae3e4cc36db3b6f4dfc2ac2d7f9",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "careers@dci-indonesia.com",
+        "Subject": "Application - Electrical Facility Engineer - Ardhya Novri Ramadhan, S.T.",
+        "Date": "Wed, 04 Nov 2026 06:43:11 +0700",
+        "Message-ID": "<179374939187.16856.7091578604055284525@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-04",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=careers%40dci-indonesia.com&su=Application+-+Electrical+Facility+Engineer+-+Ardhya+Novri+Ramadhan%2C+S.T.&body=Dear+Talent+Acquisition+Team+at+PT+DCI+Indonesia+Tbk%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Electrical+%2F+Critical+Facilities+Operations+Engineer+%28Fresh+Graduate%29+position+at+PT+DCI+Indonesia+Tbk.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0AMy+8-week+Electrical+Engineering+internship+at+Soekarno-Hatta+International+Airport+%28PT+Angkasa+Pura+Indonesia%29+focused+specifically+on+mission-critical+power+infrastructure%E2%80%94comprising+5+weeks+in+UPS%2Fconverter+maintenance+and+3+weeks+in+electrical+protection+relays%2C+alongside+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.+This+hands-on+discipline+in+critical+facility+operations+provides+a+direct+foundation+for+maintaining+Tier-IV+data+center+reliability+at+DCI+Indonesia.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+DCI+Indonesia+Tbk.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:careers%40dci-indonesia.com?subject=Application+-+Electrical+Facility+Engineer+-+Ardhya+Novri+Ramadhan%2C+S.T.&body=Dear+Talent+Acquisition+Team+at+PT+DCI+Indonesia+Tbk%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Electrical+%2F+Critical+Facilities+Operations+Engineer+%28Fresh+Graduate%29+position+at+PT+DCI+Indonesia+Tbk.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0AMy+8-week+Electrical+Engineering+internship+at+Soekarno-Hatta+International+Airport+%28PT+Angkasa+Pura+Indonesia%29+focused+specifically+on+mission-critical+power+infrastructure%E2%80%94comprising+5+weeks+in+UPS%2Fconverter+maintenance+and+3+weeks+in+electrical+protection+relays%2C+alongside+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.+This+hands-on+discipline+in+critical+facility+operations+provides+a+direct+foundation+for+maintaining+Tier-IV+data+center+reliability+at+DCI+Indonesia.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+PT+DCI+Indonesia+Tbk.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-05",
+      "rank": 5,
+      "company": "Mubadala Energy Indonesia",
+      "role": "Fresh Graduate Program 2027 — Project & Engineering Stream",
+      "fit_score": 90,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://www.mubadalaenergy.com/careers/",
+      "submission_mechanism": "Mubadala Energy Careers Portal + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-05.eml",
+      "eml_filename": "RADAR-261104-05.eml",
+      "eml_size_bytes": 1584558,
+      "eml_sha256": "5196f69d5f89d8da6c29d8e56e53f542f2a33a1d8cf27ce4cdd297351baebe5f",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "jakarta.recruitment@mubadalaenergy.com",
+        "Subject": "Fresh Graduate Program 2027 (Project & Engineering) - Ardhya Novri Ramadhan",
+        "Date": "Wed, 04 Nov 2026 06:43:13 +0700",
+        "Message-ID": "<179374939337.16856.577928724846027189@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-05",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=jakarta.recruitment%40mubadalaenergy.com&su=Fresh+Graduate+Program+2027+%28Project+%26+Engineering%29+-+Ardhya+Novri+Ramadhan&body=Dear+Talent+Acquisition+Team+at+Mubadala+Energy+Indonesia%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Fresh+Graduate+Program+2027+%E2%80%94+Project+%26+Engineering+Stream+at+Mubadala+Energy+Indonesia.+As+an+Indonesian+national+who+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28exceeding+the+minimum+3.20+GPA+requirement%3B+National+Diploma+Number%3A+001008202012026100162%29%2C+I+am+eager+to+contribute+to+Mubadala+Energy%27s+structured+engineering+development+track.%0D%0A%0D%0ACombining+critical+electrical+infrastructure+exposure+%28UPS%2Fconverter+systems%2C+protection+relays%2C+substation+inspections%2C+and+SCADA+monitoring%29+with+rigorous+data+integrity+verification+%28CRC-32+and+SHA-256+telemetry+validation+in+Python+and+C%29%2C+I+bring+disciplined+engineering+execution+and+cross-functional+collaboration+suited+for+offshore+and+energy+project+engineering.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+Mubadala+Energy+Indonesia.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:jakarta.recruitment%40mubadalaenergy.com?subject=Fresh+Graduate+Program+2027+%28Project+%26+Engineering%29+-+Ardhya+Novri+Ramadhan&body=Dear+Talent+Acquisition+Team+at+Mubadala+Energy+Indonesia%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Fresh+Graduate+Program+2027+%E2%80%94+Project+%26+Engineering+Stream+at+Mubadala+Energy+Indonesia.+As+an+Indonesian+national+who+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28exceeding+the+minimum+3.20+GPA+requirement%3B+National+Diploma+Number%3A+001008202012026100162%29%2C+I+am+eager+to+contribute+to+Mubadala+Energy%27s+structured+engineering+development+track.%0D%0A%0D%0ACombining+critical+electrical+infrastructure+exposure+%28UPS%2Fconverter+systems%2C+protection+relays%2C+substation+inspections%2C+and+SCADA+monitoring%29+with+rigorous+data+integrity+verification+%28CRC-32+and+SHA-256+telemetry+validation+in+Python+and+C%29%2C+I+bring+disciplined+engineering+execution+and+cross-functional+collaboration+suited+for+offshore+and+energy+project+engineering.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+Mubadala+Energy+Indonesia.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-06",
+      "rank": 6,
+      "company": "PT Astra Otoparts Tbk (Grup Astra)",
+      "role": "Engineering - AOP (Vacancy ID: 13651 — Maintenance, Process & Automation Engineering)",
+      "fit_score": 90,
+      "evidence_status": "A_SENT_VERIFIED",
+      "portal_url": "https://career.astra.co.id/lowongan/lowongan-detail-page/13651/Engineering-AOP",
+      "submission_mechanism": "LIVE SUBMITTED on Portal Resmi Astra Career (career.astra.co.id — Vacancy ID 13651, Application ID 8035695, Seleksi Administratif - Dalam Proses) + RFC-822 Email Backup Package",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-06.eml",
+      "eml_filename": "RADAR-261104-06.eml",
+      "eml_size_bytes": 1584506,
+      "eml_sha256": "4737a22c45f30f226c6450da0cadf90ba37159cae5662ba353758d77f26b3ec6",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruitment@component.astra.co.id",
+        "Subject": "Engineering - Astra Otoparts - Ardhya Novri Ramadhan",
+        "Date": "Wed, 04 Nov 2026 06:43:13 +0700",
+        "Message-ID": "<179374939367.16856.12098121688166003431@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-06",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruitment%40component.astra.co.id&su=Engineering+-+Astra+Otoparts+-+Ardhya+Novri+Ramadhan&body=Yth.+Tim+Rekrutmen+PT+Astra+Otoparts+Tbk+%28Grup+Astra%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%2C+memenuhi+syarat+S1+Teknik+Elektro+IPK+min.+3%2C00+pada+lowongan+Engineering+-+AOP+Vacancy+ID+13651%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+-+AOP+di+PT+Astra+Otoparts+Tbk.%0D%0A%0D%0APengalaman+saya+dalam+analisis+data+pengujian+teknis%2C+perancangan+sistem+akuisisi+sinyal+mikrokontroler+STM32F411CEU6+%26+telemetri+Python%2C+kontrol+motor+PWM+berbasis+ESP32%2C+serta+pemeliharaan+sistem+kelistrikan+UPS%2Fconverter%2C+relai+proteksi%2C+SCADA%2C+dan+pelatihan+instalasi+PLC+sangat+relevan+untuk+mendukung+pengembangan+proses+engineering%2C+otomasi+lini+produksi%2C+dan+inisiatif+continuous+improvement+di+pabrik+PT+Astra+Otoparts+Tbk.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Astra+Otoparts+Tbk+%28Grup+Astra%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruitment%40component.astra.co.id?subject=Engineering+-+Astra+Otoparts+-+Ardhya+Novri+Ramadhan&body=Yth.+Tim+Rekrutmen+PT+Astra+Otoparts+Tbk+%28Grup+Astra%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%2C+memenuhi+syarat+S1+Teknik+Elektro+IPK+min.+3%2C00+pada+lowongan+Engineering+-+AOP+Vacancy+ID+13651%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+-+AOP+di+PT+Astra+Otoparts+Tbk.%0D%0A%0D%0APengalaman+saya+dalam+analisis+data+pengujian+teknis%2C+perancangan+sistem+akuisisi+sinyal+mikrokontroler+STM32F411CEU6+%26+telemetri+Python%2C+kontrol+motor+PWM+berbasis+ESP32%2C+serta+pemeliharaan+sistem+kelistrikan+UPS%2Fconverter%2C+relai+proteksi%2C+SCADA%2C+dan+pelatihan+instalasi+PLC+sangat+relevan+untuk+mendukung+pengembangan+proses+engineering%2C+otomasi+lini+produksi%2C+dan+inisiatif+continuous+improvement+di+pabrik+PT+Astra+Otoparts+Tbk.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Astra+Otoparts+Tbk+%28Grup+Astra%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-07",
+      "rank": 7,
+      "company": "PT Astra Honda Motor (AHM)",
+      "role": "Engineering Development / Production Engineering Staff",
+      "fit_score": 89,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://recruitment.astra-honda.com/",
+      "submission_mechanism": "Portal Resmi Rekrutmen AHM (recruitment.astra-honda.com) + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-07.eml",
+      "eml_filename": "RADAR-261104-07.eml",
+      "eml_size_bytes": 1584370,
+      "eml_sha256": "42adf16e41f7a58af9d21fba894599c80ba972defea57697c39e56f9ad94a075",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruitment@astra-honda.com",
+        "Subject": "Production Engineering Staff - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+        "Date": "Wed, 04 Nov 2026 06:43:14 +0700",
+        "Message-ID": "<179374939410.16856.819569975018314915@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-07",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruitment%40astra-honda.com&su=Production+Engineering+Staff+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Astra+Honda+Motor+%28AHM%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+Development+%2F+Production+Engineering+Staff+di+PT+Astra+Honda+Motor+%28AHM%29.%0D%0A%0D%0AKombinasi+keahlian+saya+pada+sistem+kelistrikan+dan+proteksi+daya+%28UPS%2Fconverter%2C+relai+proteksi%2C+gardu+induk%2C+SCADA%2C+dan+pelatihan+instalasi+PLC%29%2C+pemrograman+mikrokontroler+STM32%2FESP32%2C+serta+otomasi+validasi+data+menggunakan+Python+sangat+mendukung+keandalan+fasilitas+produksi+dan+rekayasa+proses+manufaktur+otomotif+di+AHM.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Astra+Honda+Motor+%28AHM%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruitment%40astra-honda.com?subject=Production+Engineering+Staff+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Astra+Honda+Motor+%28AHM%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+Development+%2F+Production+Engineering+Staff+di+PT+Astra+Honda+Motor+%28AHM%29.%0D%0A%0D%0AKombinasi+keahlian+saya+pada+sistem+kelistrikan+dan+proteksi+daya+%28UPS%2Fconverter%2C+relai+proteksi%2C+gardu+induk%2C+SCADA%2C+dan+pelatihan+instalasi+PLC%29%2C+pemrograman+mikrokontroler+STM32%2FESP32%2C+serta+otomasi+validasi+data+menggunakan+Python+sangat+mendukung+keandalan+fasilitas+produksi+dan+rekayasa+proses+manufaktur+otomotif+di+AHM.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Astra+Honda+Motor+%28AHM%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-08",
+      "rank": 8,
+      "company": "PT Djarum",
+      "role": "Electrical Engineer (Fresh Graduate)",
+      "fit_score": 88,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://www.djarum.com/",
+      "submission_mechanism": "Portal Resmi PT Djarum (djarum.com / djarumkarir.com) + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-08.eml",
+      "eml_filename": "RADAR-261104-08.eml",
+      "eml_size_bytes": 1584367,
+      "eml_sha256": "6b0497a416c2603aef40cf1dcab93c2520e1914f1317b956bca5a230ec10ffc7",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruit@djarum.com",
+        "Subject": "Electrical Engineer - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+        "Date": "Wed, 04 Nov 2026 06:43:14 +0700",
+        "Message-ID": "<179374939466.16856.4467238592149338964@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-08",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruit%40djarum.com&su=Electrical+Engineer+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Djarum%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+%28Semarang%29+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Electrical+Engineer+%28Fresh+Graduate%29+di+PT+Djarum+dengan+kesiapan+penuh+untuk+penempatan+di+Kudus%2C+Jawa+Tengah.%0D%0A%0D%0APengalaman+praktis+saya+pada+sistem+distribusi+daya%2C+UPS%2Fconverter%2C+relai+proteksi%2C+SCADA%2C+pelatihan+PLC%2C+serta+pengembangan+perangkat+keras%2Flunak+mikrokontroler+%28STM32F411CEU6+%26+ESP32+PWM%29+dan+asisten+praktikum+troubleshooting+rangkaian+elektronika+siap+mendukung+pemeliharaan+dan+otomasi+mesin+produksi+berkecepatan+tinggi+di+PT+Djarum.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Djarum.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruit%40djarum.com?subject=Electrical+Engineer+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Djarum%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+%28Semarang%29+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Electrical+Engineer+%28Fresh+Graduate%29+di+PT+Djarum+dengan+kesiapan+penuh+untuk+penempatan+di+Kudus%2C+Jawa+Tengah.%0D%0A%0D%0APengalaman+praktis+saya+pada+sistem+distribusi+daya%2C+UPS%2Fconverter%2C+relai+proteksi%2C+SCADA%2C+pelatihan+PLC%2C+serta+pengembangan+perangkat+keras%2Flunak+mikrokontroler+%28STM32F411CEU6+%26+ESP32+PWM%29+dan+asisten+praktikum+troubleshooting+rangkaian+elektronika+siap+mendukung+pemeliharaan+dan+otomasi+mesin+produksi+berkecepatan+tinggi+di+PT+Djarum.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Djarum.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-09",
+      "rank": 9,
+      "company": "BDx Data Centers Indonesia",
+      "role": "Junior Critical Facility / Electrical Operations Engineer",
+      "fit_score": 87,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://www.bdxworld.com/careers/",
+      "submission_mechanism": "BDx World Careers Page / LinkedIn Verified + Direct RFC-822 Email Package",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-09.eml",
+      "eml_filename": "RADAR-261104-09.eml",
+      "eml_size_bytes": 1584454,
+      "eml_sha256": "fe870d078c702d18bbdc33382752b94eb90f4204d121b151ef8ae8dd180c3931",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "careers@bdxworld.com",
+        "Subject": "Application - Junior Critical Facility Engineer - Ardhya Novri Ramadhan, S.T.",
+        "Date": "Wed, 04 Nov 2026 06:43:15 +0700",
+        "Message-ID": "<179374939506.16856.3111205638443535840@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-09",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=careers%40bdxworld.com&su=Application+-+Junior+Critical+Facility+Engineer+-+Ardhya+Novri+Ramadhan%2C+S.T.&body=Dear+Talent+Acquisition+Team+at+BDx+Data+Centers+Indonesia%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Junior+Critical+Facility+%2F+Electrical+Operations+Engineer+position+at+BDx+Data+Centers+Indonesia.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0AHaving+completed+an+8-week+Electrical+Engineering+internship+at+Soekarno-Hatta+International+Airport+%285+weeks+on+UPS%2Fconverter+systems+and+3+weeks+on+protection+relays%2C+plus+substation+inspections+and+SCADA+monitoring%29+and+authored+technical+SOPs+for+telemetry+systems+at+Redesma+Technologies%2C+I+am+well-prepared+to+support+24%2F7+critical+power+operations%2C+preventive+maintenance%2C+and+SOP+compliance+across+BDx+Indonesia%27s+data+center+campuses.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+BDx+Data+Centers+Indonesia.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:careers%40bdxworld.com?subject=Application+-+Junior+Critical+Facility+Engineer+-+Ardhya+Novri+Ramadhan%2C+S.T.&body=Dear+Talent+Acquisition+Team+at+BDx+Data+Centers+Indonesia%2C%0D%0A%0D%0AI+am+writing+to+apply+for+the+Junior+Critical+Facility+%2F+Electrical+Operations+Engineer+position+at+BDx+Data+Centers+Indonesia.+I+graduated+with+a+Bachelor+of+Engineering+in+Electrical+Engineering+from+Diponegoro+University+%28UNDIP%29+in+September+2026+with+a+cumulative+GPA+of+3.43%2F4.00+%28National+Diploma+Number%3A+001008202012026100162%29.%0D%0A%0D%0AHaving+completed+an+8-week+Electrical+Engineering+internship+at+Soekarno-Hatta+International+Airport+%285+weeks+on+UPS%2Fconverter+systems+and+3+weeks+on+protection+relays%2C+plus+substation+inspections+and+SCADA+monitoring%29+and+authored+technical+SOPs+for+telemetry+systems+at+Redesma+Technologies%2C+I+am+well-prepared+to+support+24%2F7+critical+power+operations%2C+preventive+maintenance%2C+and+SOP+compliance+across+BDx+Indonesia%27s+data+center+campuses.%0D%0A%0D%0AMy+academic+and+internship+background+combines+critical+electrical+infrastructure+exposure%2C+embedded+firmware+development%2C+and+automated+Python+verification%3A%0D%0A-+Critical+Power+%26+Protection+Exposure+%28PT+Angkasa+Pura+Indonesia%2C+Soekarno-Hatta+International+Airport%29%3A+Completed+an+8-week+Electrical+Engineering+internship+%285+weeks+in+UPS%2Fconverter+systems+and+3+weeks+in+electrical+protection+relays%29%2C+participating+in+substation+inspections%2C+SCADA+monitoring%2C+and+guided+PLC+installation+training.%0D%0A-+Embedded+Signal+Acquisition+%26+Telemetry+%28Undergraduate+Thesis%29%3A+Built+an+STM32F411CEU6+surface+EMG+acquisition+subsystem+using+a+12-bit+ADC+with+DMA+at+a+nominal+4%2C000+Hz+sampling+rate%2C+cascaded+2nd-order+Butterworth+%2820+Hz+HPF%2C+500+Hz+LPF%29+and+50+Hz+Notch+digital+filters%2C+and+UART+telemetry+to+a+Python+desktop+application+verified+with+CRC-32+and+SHA-256+checks.%0D%0A-+IoT+Prototyping+%26+Software+Verification+%28Redesma+Technologies+%26+Independent+Projects%29%3A+Developed+ESP32+temperature+telemetry+and+PWM+motor-control+prototypes%2C+authored+technical+SOPs%2C+and+created+%60uart-fixture-kit%60+%28an+open-source+Python+package+for+synthetic+UART+stream+parser+verification+with+130+passing+pytest+tests%29.%0D%0A%0D%0AAttached+are+my+single-page+ATS+CV+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+and+official+Bachelor%27s+Degree+Diploma+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+My+official+academic+transcript+is+also+available+upon+request.%0D%0A%0D%0AThank+you+for+your+time+and+consideration.+I+look+forward+to+the+opportunity+to+discuss+how+my+foundation+in+electrical+systems%2C+instrumentation%2C+and+software+tooling+can+contribute+to+BDx+Data+Centers+Indonesia.%0D%0A%0D%0ASincerely%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortfolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    },
+    {
+      "uid": "RADAR-261104-10",
+      "rank": 10,
+      "company": "PT Kalbe Farma Tbk (Kalbe Group)",
+      "role": "Engineering & Automation Trainee / Supervisor",
+      "fit_score": 86,
+      "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+      "portal_url": "https://www.kalbe.co.id/id/karir",
+      "submission_mechanism": "Portal Resmi Karir Kalbe (kalbe.co.id/id/karir) + Staged RFC-822 Email Draft",
+      "eml_file": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-10.eml",
+      "eml_filename": "RADAR-261104-10.eml",
+      "eml_size_bytes": 1584454,
+      "eml_sha256": "df45e37373469a195e3b5d8afea2fc67a2b50726f8a162df5b2a158b7c60aa72",
+      "headers": {
+        "From": "Ardhya Novri Ramadhan <ardhyasan@gmail.com>",
+        "To": "recruitment@kalbe.co.id",
+        "Subject": "Engineering & Automation Trainee - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+        "Date": "Wed, 04 Nov 2026 06:43:15 +0700",
+        "Message-ID": "<179374939545.16856.8361021500415413214@ardhyanovri.my.id>",
+        "X-Radar-Target-UID": "RADAR-261104-10",
+        "X-Unsent": "1"
+      },
+      "content_checks": {
+        "has_nin_001008202012026100162": true,
+        "has_gpa_3_43": true,
+        "no_skl_mention": true,
+        "master_cv_locked_verified": true,
+        "official_ijazah_locked_verified": true,
+        "attachment_count": 2,
+        "all_checks_passed": true
+      },
+      "attachments": [
+        {
+          "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+          "content_type": "application/pdf",
+          "bytes": 99026,
+          "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+        },
+        {
+          "filename": "Ijazah Ardhya Novri.pdf",
+          "content_type": "application/pdf",
+          "bytes": 1056099,
+          "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+        }
+      ],
+      "gmail_web_compose_url": "https://mail.google.com/mail/?view=cm&fs=1&to=recruitment%40kalbe.co.id&su=Engineering+%26+Automation+Trainee+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Kalbe+Farma+Tbk+%28Kalbe+Group%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+%26+Automation+Trainee+%2F+Supervisor+di+PT+Kalbe+Farma+Tbk.%0D%0A%0D%0APengalaman+saya+dalam+kalibrasi+sensor+dan+akuisisi+sinyal+digital+presisi+tinggi+%28STM32F411CEU6+12-bit+ADC+nominal+4.000+Hz+dengan+verifikasi+integritas+data+CRC-32+%26+SHA-256%29%2C+pemeliharaan+sistem+daya+UPS%2Fconverter+dan+relai+proteksi%2C+pemantauan+SCADA%2C+pelatihan+PLC%2C+serta+penyusunan+SOP+teknis+sangat+relevan+dengan+standar+ketelitian+Engineering%2C+Instrumentasi%2C+dan+Otomasi+manufaktur+farmasi+di+Kalbe+Group.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Kalbe+Farma+Tbk+%28Kalbe+Group%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "mailto_url": "mailto:recruitment%40kalbe.co.id?subject=Engineering+%26+Automation+Trainee+-+Ardhya+Novri+Ramadhan+-+S1+Teknik+Elektro+UNDIP&body=Yth.+Tim+Rekrutmen+PT+Kalbe+Farma+Tbk+%28Kalbe+Group%29%2C%0D%0A%0D%0APerkenalkan%2C+saya+Ardhya+Novri+Ramadhan%2C+S.T.%2C+lulusan+S1+Teknik+Elektro+%28Konsentrasi+Elektronika%29+Universitas+Diponegoro+pada+September+2026+dengan+IPK+3%2C43%2F4%2C00+%28148+SKS%2C+Nomor+Ijazah+Nasional%3A+001008202012026100162%29.+Melalui+pesan+ini%2C+saya+mengajukan+lamaran+untuk+posisi+Engineering+%26+Automation+Trainee+%2F+Supervisor+di+PT+Kalbe+Farma+Tbk.%0D%0A%0D%0APengalaman+saya+dalam+kalibrasi+sensor+dan+akuisisi+sinyal+digital+presisi+tinggi+%28STM32F411CEU6+12-bit+ADC+nominal+4.000+Hz+dengan+verifikasi+integritas+data+CRC-32+%26+SHA-256%29%2C+pemeliharaan+sistem+daya+UPS%2Fconverter+dan+relai+proteksi%2C+pemantauan+SCADA%2C+pelatihan+PLC%2C+serta+penyusunan+SOP+teknis+sangat+relevan+dengan+standar+ketelitian+Engineering%2C+Instrumentasi%2C+dan+Otomasi+manufaktur+farmasi+di+Kalbe+Group.%0D%0A%0D%0ASelama+masa+studi+dan+magang%2C+saya+membangun+fondasi+praktis+di+bidang+sistem+kelistrikan%2C+elektronika+terbenam+%28embedded+systems%29%2C+dan+otomasi%3A%0D%0A1.+Electrical+Engineering+Intern+di+PT+Angkasa+Pura+Indonesia+%28Bandara+Internasional+Soekarno-Hatta%2C+8+minggu%29%3A+mengikuti+rotasi+5+minggu+pada+sistem+UPS%2Fconverter+dan+3+minggu+pada+relai+proteksi+kelistrikan%2C+serta+berpartisipasi+dalam+inspeksi+gardu+induk%2C+pemantauan+SCADA%2C+dan+pelatihan+instalasi+PLC.%0D%0A2.+Tugas+Akhir+Akuisisi+%26+Pemrosesan+Sinyal+Digital+%28STM32F411CEU6+%26+Python%29%3A+merancang+sistem+akuisisi+sinyal+elektromiografi+%28EMG%29+12-bit+ADC+dengan+DMA+pada+frekuensi+pencuplikan+nominal+4.000+Hz%2C+mengimplementasikan+filter+digital+IIR+Biquad+%28Butterworth+HPF+20+Hz%2C+LPF+500+Hz%2C+dan+Notch+50+Hz%29%2C+serta+membangun+antarmuka+telemetri+UART+ke+Python+dengan+verifikasi+integritas+data+CRC-32+dan+SHA-256.%0D%0A3.+IoT+%26+Embedded+Systems+Intern+di+Redesma+Technologies+%26+Proyek+Pengujian+Mandiri%3A+mengembangkan+prototipe+telemetri+suhu+berbasis+ESP32+dan+kontrol+motor+PWM%2C+menyusun+SOP+teknis+komparasi+platform+IoT%2C+serta+membangun+paket+Python+%60uart-fixture-kit%60+%28130+pengujian+pytest+lulus%29+untuk+verifikasi+parser+telemetri+serial.%0D%0A%0D%0ASebagai+lampiran%2C+saya+sertakan+CV+ATS+utama+%28%60Ardhya+Novri+Ramadhan+-+CV+ATS.pdf%60%29+dan+Ijazah+Resmi+S1+Teknik+Elektro+UNDIP+%28%60Ijazah+Ardhya+Novri.pdf%60%29.+Transkrip+Akademik+resmi+siap+saya+lampirkan+sesuai+kebutuhan+portal+rekrutmen.%0D%0A%0D%0ABesar+harapan+saya+untuk+dapat+mengikuti+tahapan+seleksi+dan+mendiskusikan+kontribusi+teknis+yang+dapat+saya+berikan+bagi+tim+PT+Kalbe+Farma+Tbk+%28Kalbe+Group%29.+Terima+kasih+atas+waktu+dan+perhatian+Bapak%2FIbu.%0D%0A%0D%0AHormat+saya%2C%0D%0AArdhya+Novri+Ramadhan%2C+S.T.%0D%0AEmail%3A+ardhyasan%40gmail.com%0D%0APortofolio%3A+https%3A%2F%2Fardhyanovri.my.id%2F+%7C+GitHub%3A+https%3A%2F%2Fgithub.com%2Fvanovri+%7C+LinkedIn%3A+https%3A%2F%2Fwww.linkedin.com%2Fin%2Fdhya%0D%0A",
+      "locked_attachment_paths": {
+        "cv_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+        "ijazah_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf"
+      }
+    }
+  ]
+}

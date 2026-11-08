@@ -1,0 +1,123 @@
+{
+  "uid": "RADAR-261104-10",
+  "rank": 10,
+  "generated_at_wib": "2026-11-04T06:30:00+07:00",
+  "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+  "company": "PT Kalbe Farma Tbk (Kalbe Group)",
+  "role": "Engineering & Automation Trainee / Supervisor",
+  "location": "Cikarang / Pulogadung (Jabodetabek)",
+  "sector": "Pharmaceutical & Healthcare Manufacturing",
+  "fit_score": 86,
+  "portal_url": "https://www.kalbe.co.id/id/karir",
+  "submission_mechanism": "Portal Resmi Karir Kalbe (kalbe.co.id/id/karir) + Staged RFC-822 Email Draft",
+  "live_http_probe": {
+    "reachable": true,
+    "http_status": 200,
+    "final_url": "https://www.kalbe.co.id/id/karir",
+    "elapsed_ms": 209,
+    "page_title": "Karir | Kalbe Farma",
+    "error": null
+  },
+  "live_submission": null,
+  "email_draft_package": {
+    "eml_path": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-10.eml",
+    "eml_size_bytes": 1584454,
+    "eml_sha256": "df45e37373469a195e3b5d8afea2fc67a2b50726f8a162df5b2a158b7c60aa72",
+    "recipient_email": "recruitment@kalbe.co.id",
+    "subject": "Engineering & Automation Trainee - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+    "verified_attachments": [
+      {
+        "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+        "content_type": "application/pdf",
+        "bytes": 99026,
+        "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+      },
+      {
+        "filename": "Ijazah Ardhya Novri.pdf",
+        "content_type": "application/pdf",
+        "bytes": 1056099,
+        "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+      }
+    ]
+  },
+  "form_autofill_fields": {
+    "university": "Universitas Diponegoro (UNDIP)",
+    "faculty": "Fakultas Teknik",
+    "major": "S1 Teknik Elektro",
+    "concentration": "Elektronika (Electronics Engineering)",
+    "entry_date": "2022-08-12",
+    "graduation_date": "2026-09-29",
+    "diploma_issued_date": "2026-10-13",
+    "gpa": 3.43,
+    "gpa_scale": 4.0,
+    "predicate": "Sangat Memuaskan (Highly Satisfactory)",
+    "total_sks": 148,
+    "total_courses": 69,
+    "national_diploma_number_nin": "001008202012026100162",
+    "transcript_number": "22020120260161",
+    "university_accreditation": "106/SK/BAN-PT/Ak.Ppj/PT/II/2023",
+    "program_accreditation": "0806/SK/LAM Teknik/AS/XII/2024",
+    "thesis_title_id": "Rancang Bangun Tapis Digital Butterworth untuk Mengurangi Gangguan pada Sinyal Elektromiografi sebagai Masukan Sistem Rehabilitasi Tangan",
+    "thesis_title_en": "Design and Construction of a Butterworth Digital Filter to Reduce Interference in Electromyography Signals as Input to a Hand Rehabilitation System",
+    "full_name": "Ardhya Novri Ramadhan, S.T.",
+    "first_name": "Ardhya Novri",
+    "last_name": "Ramadhan",
+    "nik": "3275080211040015",
+    "nim": "21060122130096",
+    "birth_place": "Jakarta",
+    "birth_date": "2004-11-02",
+    "email": "ardhyasan@gmail.com",
+    "domicile": "Jabodetabek (KTP) / Semarang",
+    "portfolio_url": "https://ardhyanovri.my.id/",
+    "github_url": "https://github.com/vanovri",
+    "linkedin_url": "https://www.linkedin.com/in/dhya",
+    "position_applied": "Engineering & Automation Trainee / Supervisor",
+    "subject_line": "Engineering & Automation Trainee - Ardhya Novri Ramadhan - S1 Teknik Elektro UNDIP",
+    "cover_letter_text": "Yth. Tim Rekrutmen PT Kalbe Farma Tbk (Kalbe Group),\n\nPerkenalkan, saya Ardhya Novri Ramadhan, S.T., lulusan S1 Teknik Elektro (Konsentrasi Elektronika) Universitas Diponegoro pada September 2026 dengan IPK 3,43/4,00 (148 SKS, Nomor Ijazah Nasional: 001008202012026100162). Melalui pesan ini, saya mengajukan lamaran untuk posisi Engineering & Automation Trainee / Supervisor di PT Kalbe Farma Tbk.\n\nPengalaman saya dalam kalibrasi sensor dan akuisisi sinyal digital presisi tinggi (STM32F411CEU6 12-bit ADC nominal 4.000 Hz dengan verifikasi integritas data CRC-32 & SHA-256), pemeliharaan sistem daya UPS/converter dan relai proteksi, pemantauan SCADA, pelatihan PLC, serta penyusunan SOP teknis sangat relevan dengan standar ketelitian Engineering, Instrumentasi, dan Otomasi manufaktur farmasi di Kalbe Group.\n\nSelama masa studi dan magang, saya membangun fondasi praktis di bidang sistem kelistrikan, elektronika terbenam (embedded systems), dan otomasi:\n1. Electrical Engineering Intern di PT Angkasa Pura Indonesia (Bandara Internasional Soekarno-Hatta, 8 minggu): mengikuti rotasi 5 minggu pada sistem UPS/converter dan 3 minggu pada relai proteksi kelistrikan, serta berpartisipasi dalam inspeksi gardu induk, pemantauan SCADA, dan pelatihan instalasi PLC.\n2. Tugas Akhir Akuisisi & Pemrosesan Sinyal Digital (STM32F411CEU6 & Python): merancang sistem akuisisi sinyal elektromiografi (EMG) 12-bit ADC dengan DMA pada frekuensi pencuplikan nominal 4.000 Hz, mengimplementasikan filter digital IIR Biquad (Butterworth HPF 20 Hz, LPF 500 Hz, dan Notch 50 Hz), serta membangun antarmuka telemetri UART ke Python dengan verifikasi integritas data CRC-32 dan SHA-256.\n3. IoT & Embedded Systems Intern di Redesma Technologies & Proyek Pengujian Mandiri: mengembangkan prototipe telemetri suhu berbasis ESP32 dan kontrol motor PWM, menyusun SOP teknis komparasi platform IoT, serta membangun paket Python `uart-fixture-kit` (130 pengujian pytest lulus) untuk verifikasi parser telemetri serial.\n\nSebagai lampiran, saya sertakan CV ATS utama (`Ardhya Novri Ramadhan - CV ATS.pdf`) dan Ijazah Resmi S1 Teknik Elektro UNDIP (`Ijazah Ardhya Novri.pdf`). Transkrip Akademik resmi siap saya lampirkan sesuai kebutuhan portal rekrutmen.\n\nBesar harapan saya untuk dapat mengikuti tahapan seleksi dan mendiskusikan kontribusi teknis yang dapat saya berikan bagi tim PT Kalbe Farma Tbk (Kalbe Group). Terima kasih atas waktu dan perhatian Bapak/Ibu.\n\nHormat saya,\nArdhya Novri Ramadhan, S.T.\nEmail: ardhyasan@gmail.com\nPortofolio: https://ardhyanovri.my.id/ | GitHub: https://github.com/vanovri | LinkedIn: https://www.linkedin.com/in/dhya\n",
+    "upload_files": {
+      "cv_file_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+      "cv_sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3",
+      "ijazah_file_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf",
+      "ijazah_sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab",
+      "transcript_file_path_if_required": null,
+      "transcript_policy": "Attach Transkrip Ardhya Novri.pdf ONLY if portal explicitly requires transcript upload."
+    }
+  },
+  "experience_boundaries": [
+    {
+      "company": "PT Angkasa Pura Indonesia (Bandara Internasional Soekarno-Hatta)",
+      "role": "Electrical Engineering Intern",
+      "duration": "8 minggu (5 minggu UPS/converter, 3 minggu relai proteksi kelistrikan)",
+      "highlights": [
+        "Partisipasi dalam inspeksi gardu induk, pelatihan relai proteksi, pemantauan SCADA, dan pelatihan instalasi PLC terpandu.",
+        "Batas klaim: paparan/pelatihan & inspeksi terpandu, bukan commissioning PLC/SCADA mandiri atau switching tegangan tinggi mandiri."
+      ]
+    },
+    {
+      "company": "Redesma Technologies",
+      "role": "IoT & Embedded Systems Intern",
+      "duration": "Magang",
+      "highlights": [
+        "Pengembangan prototipe telemetri suhu berbasis ESP32 dan kontrol motor PWM.",
+        "Penyusunan SOP teknis komparasi platform IoT (Blynk vs Thinger.io)."
+      ]
+    },
+    {
+      "company": "Laboratorium Teknik Elektro Universitas Diponegoro",
+      "role": "Asisten Praktikum Teknik Elektro",
+      "duration": "2 semester (3 modul praktikum)",
+      "highlights": [
+        "Membimbing mahasiswa dalam perakitan rangkaian elektronika dan troubleshooting komponen."
+      ]
+    }
+  ],
+  "thesis_technical_summary": {
+    "mcu": "STM32F411CEU6 (ARM Cortex-M4)",
+    "sensor": "DFRobot Analog EMG Sensor (SEN0240) -> ADC1 PA0",
+    "acquisition": "12-bit ADC + DMA pada frekuensi pencuplikan nominal 4.000 Hz (EMG_SAMPLE_RATE_HZ = 4000U)",
+    "calibration": "2 detik pertama (8.000 sampel valid) untuk estimasi dan pengurangan offset DC",
+    "dsp_filters": "Cascaded IIR Biquad Direct Form II Transposed: Butterworth Orde-2 HPF 20 Hz, Butterworth Orde-2 LPF 500 Hz, dan Digital Notch Orde-2 50 Hz (Q=30)",
+    "feature_extraction": "RMS dan MAV setiap jendela 400 sampel (100 ms); korelasi Pearson r = 0,994114 (r^2 = 0,988)",
+    "telemetry_verification": "UART ke aplikasi desktop Python (GUI.py & GUI_sync_STM32.py) dengan verifikasi integritas CRC-32 dan SHA-256 pada 8.000 sampel kalibrasi & 12.043 baris uji (0 gap counter, 0 error/clipping)"
+  }
+}

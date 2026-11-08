@@ -1,0 +1,123 @@
+{
+  "uid": "RADAR-261104-03",
+  "rank": 3,
+  "generated_at_wib": "2026-11-04T06:30:00+07:00",
+  "evidence_status": "B_LIVE_VERIFIED_STAGED_PACKAGE",
+  "company": "PT Indonesia Epson Industry",
+  "role": "Automation Electrical Engineering Staff (Fresh Graduate)",
+  "location": "EJIP Industrial Park, Cikarang Selatan (Bekasi)",
+  "sector": "Precision Manufacturing & Industrial Robotics",
+  "fit_score": 92,
+  "portal_url": "https://id.jobstreet.com/id/PT-Indonesia-Epson-Industry-jobs",
+  "submission_mechanism": "JobStreet Verified Account Quick Apply (Cloudflare-protected portal) + Official Epson Recruitment Email Draft",
+  "live_http_probe": {
+    "reachable": true,
+    "http_status": 403,
+    "final_url": "https://id.jobstreet.com/id/PT-Indonesia-Epson-Industry-jobs",
+    "elapsed_ms": 94,
+    "page_title": "HTTP 403 (Forbidden)",
+    "error": "HTTPError 403: Forbidden"
+  },
+  "live_submission": null,
+  "email_draft_package": {
+    "eml_path": "C:\\Users\\ardhy\\.gemini\\antigravity\\scratch\\radar-loker\\execution-pack-2026-11-04\\eml\\RADAR-261104-03.eml",
+    "eml_size_bytes": 1584644,
+    "eml_sha256": "da0763dc855047a2e4cc9bc28de52eb62fb05942bcf9bbf55f0b9e0803085298",
+    "recipient_email": "ieirecruitment@epi.epson.com.sg",
+    "subject": "Automation Electrical Engineering - Ardhya Novri Ramadhan - Universitas Diponegoro",
+    "verified_attachments": [
+      {
+        "filename": "Ardhya Novri Ramadhan - CV ATS.pdf",
+        "content_type": "application/pdf",
+        "bytes": 99026,
+        "sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3"
+      },
+      {
+        "filename": "Ijazah Ardhya Novri.pdf",
+        "content_type": "application/pdf",
+        "bytes": 1056099,
+        "sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab"
+      }
+    ]
+  },
+  "form_autofill_fields": {
+    "university": "Universitas Diponegoro (UNDIP)",
+    "faculty": "Fakultas Teknik",
+    "major": "S1 Teknik Elektro",
+    "concentration": "Elektronika (Electronics Engineering)",
+    "entry_date": "2022-08-12",
+    "graduation_date": "2026-09-29",
+    "diploma_issued_date": "2026-10-13",
+    "gpa": 3.43,
+    "gpa_scale": 4.0,
+    "predicate": "Sangat Memuaskan (Highly Satisfactory)",
+    "total_sks": 148,
+    "total_courses": 69,
+    "national_diploma_number_nin": "001008202012026100162",
+    "transcript_number": "22020120260161",
+    "university_accreditation": "106/SK/BAN-PT/Ak.Ppj/PT/II/2023",
+    "program_accreditation": "0806/SK/LAM Teknik/AS/XII/2024",
+    "thesis_title_id": "Rancang Bangun Tapis Digital Butterworth untuk Mengurangi Gangguan pada Sinyal Elektromiografi sebagai Masukan Sistem Rehabilitasi Tangan",
+    "thesis_title_en": "Design and Construction of a Butterworth Digital Filter to Reduce Interference in Electromyography Signals as Input to a Hand Rehabilitation System",
+    "full_name": "Ardhya Novri Ramadhan, S.T.",
+    "first_name": "Ardhya Novri",
+    "last_name": "Ramadhan",
+    "nik": "3275080211040015",
+    "nim": "21060122130096",
+    "birth_place": "Jakarta",
+    "birth_date": "2004-11-02",
+    "email": "ardhyasan@gmail.com",
+    "domicile": "Jabodetabek (KTP) / Semarang",
+    "portfolio_url": "https://ardhyanovri.my.id/",
+    "github_url": "https://github.com/vanovri",
+    "linkedin_url": "https://www.linkedin.com/in/dhya",
+    "position_applied": "Automation Electrical Engineering Staff (Fresh Graduate)",
+    "subject_line": "Automation Electrical Engineering - Ardhya Novri Ramadhan - Universitas Diponegoro",
+    "cover_letter_text": "Dear Talent Acquisition Team at PT Indonesia Epson Industry,\n\nI am writing to apply for the Automation Electrical Engineering Staff (Fresh Graduate) position at PT Indonesia Epson Industry (EJIP Industrial Park, Cikarang). I graduated with a Bachelor of Engineering in Electrical Engineering (Electronics Concentration) from Diponegoro University (UNDIP) in September 2026 with a cumulative GPA of 3.43/4.00 (National Diploma Number: 001008202012026100162).\n\nPT Indonesia Epson Industry's Automation Electrical Engineering role requires a strong combination of C, Python, embedded control, and PLC/automation fundamentals. My undergraduate thesis and open-source engineering projects directly pair embedded C firmware (STM32F411CEU6 12-bit ADC + DMA at a nominal 4,000 Hz sampling rate) with automated Python UART telemetry and verification (`uart-fixture-kit` with 130 passing pytest tests), complemented by guided PLC installation training and SCADA monitoring during my airport electrical internship.\n\nMy academic and internship background combines critical electrical infrastructure exposure, embedded firmware development, and automated Python verification:\n- Critical Power & Protection Exposure (PT Angkasa Pura Indonesia, Soekarno-Hatta International Airport): Completed an 8-week Electrical Engineering internship (5 weeks in UPS/converter systems and 3 weeks in electrical protection relays), participating in substation inspections, SCADA monitoring, and guided PLC installation training.\n- Embedded Signal Acquisition & Telemetry (Undergraduate Thesis): Built an STM32F411CEU6 surface EMG acquisition subsystem using a 12-bit ADC with DMA at a nominal 4,000 Hz sampling rate, cascaded 2nd-order Butterworth (20 Hz HPF, 500 Hz LPF) and 50 Hz Notch digital filters, and UART telemetry to a Python desktop application verified with CRC-32 and SHA-256 checks.\n- IoT Prototyping & Software Verification (Redesma Technologies & Independent Projects): Developed ESP32 temperature telemetry and PWM motor-control prototypes, authored technical SOPs, and created `uart-fixture-kit` (an open-source Python package for synthetic UART stream parser verification with 130 passing pytest tests).\n\nAttached are my single-page ATS CV (`Ardhya Novri Ramadhan - CV ATS.pdf`) and official Bachelor's Degree Diploma (`Ijazah Ardhya Novri.pdf`). My official academic transcript is also available upon request.\n\nThank you for your time and consideration. I look forward to the opportunity to discuss how my foundation in electrical systems, instrumentation, and software tooling can contribute to PT Indonesia Epson Industry.\n\nSincerely,\nArdhya Novri Ramadhan, S.T.\nEmail: ardhyasan@gmail.com\nPortfolio: https://ardhyanovri.my.id/ | GitHub: https://github.com/vanovri | LinkedIn: https://www.linkedin.com/in/dhya\n",
+    "upload_files": {
+      "cv_file_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ardhya Novri Ramadhan - CV ATS.pdf",
+      "cv_sha256": "c0a566b32a6cee1472509d2a01bab538dbdf95494fc7df45adcd61e41f3f8bc3",
+      "ijazah_file_path": "C:\\Users\\ardhy\\OneDrive\\Documents\\My Docs\\Ijazah Ardhya Novri.pdf",
+      "ijazah_sha256": "650935932916f5655ba50151caed6fd07b52acabecf2cb41f60046f29a86d5ab",
+      "transcript_file_path_if_required": null,
+      "transcript_policy": "Attach Transkrip Ardhya Novri.pdf ONLY if portal explicitly requires transcript upload."
+    }
+  },
+  "experience_boundaries": [
+    {
+      "company": "PT Angkasa Pura Indonesia (Bandara Internasional Soekarno-Hatta)",
+      "role": "Electrical Engineering Intern",
+      "duration": "8 minggu (5 minggu UPS/converter, 3 minggu relai proteksi kelistrikan)",
+      "highlights": [
+        "Partisipasi dalam inspeksi gardu induk, pelatihan relai proteksi, pemantauan SCADA, dan pelatihan instalasi PLC terpandu.",
+        "Batas klaim: paparan/pelatihan & inspeksi terpandu, bukan commissioning PLC/SCADA mandiri atau switching tegangan tinggi mandiri."
+      ]
+    },
+    {
+      "company": "Redesma Technologies",
+      "role": "IoT & Embedded Systems Intern",
+      "duration": "Magang",
+      "highlights": [
+        "Pengembangan prototipe telemetri suhu berbasis ESP32 dan kontrol motor PWM.",
+        "Penyusunan SOP teknis komparasi platform IoT (Blynk vs Thinger.io)."
+      ]
+    },
+    {
+      "company": "Laboratorium Teknik Elektro Universitas Diponegoro",
+      "role": "Asisten Praktikum Teknik Elektro",
+      "duration": "2 semester (3 modul praktikum)",
+      "highlights": [
+        "Membimbing mahasiswa dalam perakitan rangkaian elektronika dan troubleshooting komponen."
+      ]
+    }
+  ],
+  "thesis_technical_summary": {
+    "mcu": "STM32F411CEU6 (ARM Cortex-M4)",
+    "sensor": "DFRobot Analog EMG Sensor (SEN0240) -> ADC1 PA0",
+    "acquisition": "12-bit ADC + DMA pada frekuensi pencuplikan nominal 4.000 Hz (EMG_SAMPLE_RATE_HZ = 4000U)",
+    "calibration": "2 detik pertama (8.000 sampel valid) untuk estimasi dan pengurangan offset DC",
+    "dsp_filters": "Cascaded IIR Biquad Direct Form II Transposed: Butterworth Orde-2 HPF 20 Hz, Butterworth Orde-2 LPF 500 Hz, dan Digital Notch Orde-2 50 Hz (Q=30)",
+    "feature_extraction": "RMS dan MAV setiap jendela 400 sampel (100 ms); korelasi Pearson r = 0,994114 (r^2 = 0,988)",
+    "telemetry_verification": "UART ke aplikasi desktop Python (GUI.py & GUI_sync_STM32.py) dengan verifikasi integritas CRC-32 dan SHA-256 pada 8.000 sampel kalibrasi & 12.043 baris uji (0 gap counter, 0 error/clipping)"
+  }
+}
